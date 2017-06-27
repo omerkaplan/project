@@ -2,6 +2,8 @@
 layout: default
 ---
 
+Hi, I'm a test commit to master using the new theme 
+
 Text can be **bold**, _italic_, or ~~strikethrough~~.
 
 [Link to another page](another-page).
