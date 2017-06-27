@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: homepage
 ---
 
 Hi, I'm a test commit to master using the new theme
