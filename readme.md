@@ -1,8 +1,8 @@
-# Jekyll Cheat Sheet
+## Jekyll Cheat Sheet
 
-## Preview Server
+**Preview Server**
 
 ~/myblog $ bundle exec jekyll serve
 http://localhost:4000
 
-## Preview Server
+**More stuff**
