@@ -2,7 +2,8 @@
 
 **Preview Server**
 
-~/myblog $ bundle exec jekyll serve
+'bundle exec jekyll serve'
+
 http://localhost:4000
 
 **More stuff**
