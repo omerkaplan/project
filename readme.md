@@ -1,5 +1,5 @@
+## Homepage Structure
 
-##Homepage Structure
 _Last update June 27, 2017_
 
 For convenience (and later on SEO purposes) I deconstructed the homepage so it now points to includes for each section.
