@@ -315,6 +315,29 @@ a {
     background-color: $hr-border-color;
     border: 0;
   }
+
+} //Closer for main content
+
+.post-image {
+  max-width: 100%;
+  img {
+    //put stuff here to manipulate image
+  }
+  &:hover {
+    //I want to put for the photograper here
+  }
+}
+  .post-image-credit{
+    position: relative;
+    bottom: 30px;
+    margin-left: 15px;
+
+    p {
+      font-size: 0.6em;
+      color: white;
+      text-shadow: 1px 1px 2px #292E38;
+
+    }
 }
 
 .site-footer {
