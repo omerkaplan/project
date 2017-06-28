@@ -2,7 +2,7 @@
 layout: post
 title:  "Hello World!"
 date:   2017-06-27 14:57:02 -0400
-categories: Cake
+categories: Stuff
 author: Omer Kaplan
 image: "default.jpg"
 image-credit: "Annie Spratt"

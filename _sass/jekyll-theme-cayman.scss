@@ -176,8 +176,18 @@ a {
   h6 {
     margin-top: 2rem;
     margin-bottom: 1rem;
-    font-weight: normal;
-    color: $section-headings-color;
+    font-weight: bold;
+    color: #1e6bb8;
+
+    entry-title {
+
+      a {
+        text-decoration: none;
+        font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+        font-weight: bold;
+      }
+    }
+
   }
 
   p {
@@ -318,6 +328,14 @@ a {
 
 } //Closer for main content
 
+.post-attribution {
+  color: #1e6bb8;
+  font-size: 0.8em;
+  display: block;
+  margin-bottom: 20px;
+  margin-top: -10px;
+}
+
 .post-image {
   max-width: 100%;
   img {
@@ -338,6 +356,15 @@ a {
       text-shadow: 1px 1px 2px #292E38;
 
     }
+}
+
+.entry-title {
+
+  a {
+    text-decoration: none;
+    font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: bold;
+  }
 }
 
 .site-footer {
