@@ -1,4 +1,6 @@
-## Homepage Structure
+# Documentation
+
+### Homepage Structure
 
 _Last update June 27, 2017_
 
