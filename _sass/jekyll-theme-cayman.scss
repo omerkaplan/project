@@ -168,7 +168,6 @@ a {
     max-width: 100%;
   }
 
-  h1,
   h2,
   h3,
   h4,
@@ -178,17 +177,51 @@ a {
     margin-bottom: 1rem;
     font-weight: bold;
     color: #1e6bb8;
+  }
 
-    entry-title {
+    h1 {
+        color: #1e6bb8;
+        font-weight: bold;
 
-      a {
+        @include large {
+          font-size: 2.25rem;
+        }
+
+        @include medium {
+          font-size: 1.75rem;
+        }
+
+        @include small {
+          font-size: 1.5rem;
+        }
+
+    }
+
+
+  .entry-title {
+
+    a {
         text-decoration: none;
         font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
         font-weight: bold;
-      }
-    }
+        color: #1e6bb8;
+        cursor: pointer;
 
-  }
+        @include large {
+          font-size: 2.25rem;
+        }
+
+        @include medium {
+          font-size: 1.75rem;
+        }
+
+        @include small {
+          font-size: 1.5rem;
+        }
+
+
+        }
+      }
 
   p {
     margin-bottom: 1em;
@@ -333,7 +366,7 @@ a {
   font-size: 0.8em;
   display: block;
   margin-bottom: 20px;
-  margin-top: -10px;
+  margin-top: -15px;
 }
 
 .post-image {
@@ -358,14 +391,6 @@ a {
     }
 }
 
-.entry-title {
-
-  a {
-    text-decoration: none;
-    font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-weight: bold;
-  }
-}
 
 .site-footer {
   padding-top: 2rem;
