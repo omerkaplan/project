@@ -14,3 +14,12 @@
   </div>
 </div>
 <div class="entry-content">{{ content }}</div>
+<!--Next and prev post navigation-->
+<div class="PageNavigation">
+  {% if post.previous.url %}
+    <a class="prev" href="{{post.previous.url}}">&laquo; {{post.previous.title}}</a>
+  {% endif %}
+  {% if post.next.url %}
+    <a class="next" href="{{post.next.url}}">{{post.next.title}}&raquo;</a>
+  {% endif %}
+</div>
