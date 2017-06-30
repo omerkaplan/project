@@ -15,7 +15,7 @@
 # in the templates via {{ site.myvariable }}.
 title: /Project
 email: email@email.com
-description: Tech &#8226; eSports &#8226; Shower Thoughts
+description: Tech &#8226; eSports &#8226; User stories
 owner_name: "Omer Kaplan" #This appears on the title of the homepage
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
