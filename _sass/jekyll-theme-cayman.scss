@@ -127,6 +127,12 @@ a {
     color: $header-heading-color;
     text-decoration: none;
     cursor: pointer;
+    -webkit-transition-duration: 0.25s;
+    transition-duration: 0.25s;
+  }
+
+  a:hover {
+    color: #B8D9D4;
   }
 }
 
@@ -452,7 +458,7 @@ a {
 
 .newsletter {
   text-align: center;
-  border: 1px solid;
+  border: 1px solid #EFF0F1;
   padding: 20px;
   margin: 5px;
   background-color: #F6F6F6;
@@ -465,11 +471,18 @@ a {
       border: none;
       border-radius: 4px;
       cursor: pointer;
+      -webkit-transition-duration: 0.4s; /* For Safari */
+      transition-duration: 0.4s;
       }
+
+        input[type=submit]:hover {
+          background-color: #005E2E;
+        }
+
 
       input[type=text] {
         width: 60%;
-        background-color: #White;
+        background-color: White;
         padding: 10px 30px;
         border: none;
         border-radius: 4px;
