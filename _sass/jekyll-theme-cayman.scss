@@ -108,6 +108,8 @@ a {
 .project-name {
   margin-top: 0.2rem;
   margin-bottom: 0.1rem;
+  text-decoration: none;
+  color: $header-heading-color;
 
   @include large {
     font-size: 3.25rem;
@@ -119,6 +121,12 @@ a {
 
   @include small {
     font-size: 1.75rem;
+  }
+
+  a {
+    color: $header-heading-color;
+    text-decoration: none;
+    cursor: pointer;
   }
 }
 
@@ -194,6 +202,7 @@ a {
         @include small {
           font-size: 1.5rem;
         }
+
 
     }
 
