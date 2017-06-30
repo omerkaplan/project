@@ -505,6 +505,13 @@ a {
       li {
         display: inline;
         padding-right: 15px;
+
+        @include small {
+          display: block;
+          text-align: left;
+          line-height: 3em;
+        }
+
       }
 
       li a {
@@ -514,5 +521,11 @@ a {
 
       li a:hover{
         color:#074078;
+      }
+
+      .dot {
+        @include small {
+          display: none;
+        }
       }
     }
