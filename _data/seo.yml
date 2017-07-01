@@ -1,0 +1,6 @@
+# This data file is meant to be used for the site's SEO optimization
+# I'm using a seperate data file so updaing this one is easier
+# and so we don't have to touch _config.yml all that often
+# note that definitions on this page are used mostly in head.html and affect both the site's
+# SEO (meaning, meta keywords and stuff like that) and also social sharing cards 
+meta_description: "Site description goes here"
