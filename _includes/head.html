@@ -3,10 +3,38 @@
   <head>
     <meta charset="UTF-8">
     <title>{% if page.title %}{{ page.title }} | {% endif %}{{ site.title | default: site.github.repository_name }} by {{ site.owner_name }}</title>
-    <meta name="description" content="{{ page.description | default: site.description | default: site.github.project_tagline }}"/>
+    <meta name="description" content="{{ site.meta_description }}"/>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="theme-color" content="#157878">
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
     <link rel="alternate" type="application/rss+xml" title="{{ site.name }}" href="/feed.xml">
+
+    <!--Facebook share cards, using open graph-->
+    <meta property="og:site_name" content="{{ site.title }}">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:url" content="{{ site.url }}{{ page.url }}">
+    <meta property="og:type" content="article">
+    {% if page.layout == "post" %}<!-- FB cards properties for posts -->
+    <meta property="og:title" content="{{ page.title }}">
+    <meta property="og:description" content="{{ page.excerpt }}">
+    <meta property="og:image" content="{{ site.url }}{{ site.img_path_url }}{{ page.image }}">
+    {% else %} <!-- FB cards properties for homepage or static pages -->
+    <meta property="og:title" content="{{ site.description }}">
+    <meta property="og:description" content="{{ site.data.seo.meta_description }}">
+    <meta property="og:image" content="{{ site.url }}{{ site.img_path_url }}{{ site.img_share_default }}">
+    {% endif %}
+
+    <!--Twitter share cards -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@{{site.twitter_username}}">
+    {% if page.layout == "post" %}<!-- Twitter cards properties for posts -->
+    <meta name="twitter:title" content="{{ page.title }}">
+    <meta name="twitter:description" content="{{ page.excerpt }}">
+    <meta name="twitter:image" content="{{ site.url }}{{ site.img_path_url }}{{ page.image }}">
+    {% else %} <!-- Twitter cards properties for homepage or static pages -->
+    <meta name="twitter:title" content="{{ site.title }}">
+    <meta name="twitter:description" content="{{ site.data.seo.meta_description }}">
+    <meta name="twitter:image" content="{{ site.url }}{{ site.img_path_url }}{{ site.img_share_default }}">
+    {% endif %}
   </head>
