@@ -8,7 +8,7 @@
 </h1>
 <div class="post-attribution">Published at {{ post.date | date: "%-d %B ,%Y" }} #{{ post.categories }}</div>
 <div class="post-image">
-  <img class="post-image" src="{{ site.url }}{{csite.img_path_url }}{{ post.image }}"> <!-- Your image name is defined on the post page! magic!-->
+  <img class="post-image" src="{{ site.url }}{{ site.img_path_url }}{{ post.image }}" alt="Photo by {{ post.image-credit }}"> <!-- Your image name is defined on the post page! magic!-->
   <div class="post-image-credit">
     <p>Photo by {{ post.image-credit }}</p>
   </div>
