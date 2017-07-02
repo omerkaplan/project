@@ -1,0 +1,4 @@
+User-Agent: *
+Disallow:
+
+Sitemap: https://omerkaplan.github.io/blog/sitemap.xml
