@@ -8,12 +8,14 @@
     <section class="main-content">
     <h1 class="entry-title">{{ page.title }}</h1>
     <div class="post-attribution">Published at {{ page.date | date: "%-d %B ,%Y" }} #{{ page.categories }}</div>
+    {% if page.image != empty %}
     <div class="post-image">
-      <img class="post-image" src="{{ site.img_path_url}}{{ page.image }}" alt="Photo by {{ page.image-credit }}"> 
+      <img class="post-image" src="{{ site.img_path_url}}{{ page.image }}" alt="Photo by {{ page.image-credit }}">
       <div class="post-image-credit">
         <p>Photo by {{ page.image-credit }}</p>
       </div>
     </div>
+    {% endif %}
     {{ content }}
     <div class="PageNavigation">
       {% if page.previous.url %}

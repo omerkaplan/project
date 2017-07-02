@@ -7,12 +7,14 @@
 {% endif %}
 </h1>
 <div class="post-attribution">Published at {{ post.date | date: "%-d %B ,%Y" }} #{{ post.categories }}</div>
+{% if post.image != empty %}
 <div class="post-image">
   <img class="post-image" src="{{ site.baseurl }}{{ site.img_path_url }}{{ post.image }}" alt="Photo by {{ post.image-credit }}"> <!-- Your image name is defined on the post page! magic!-->
   <div class="post-image-credit">
     <p>Photo by {{ post.image-credit }}</p>
   </div>
 </div>
+{% endif %}
 <div class="entry-content">{{ content }}</div>
 <!--Next and prev post navigation-->
 <div class="PageNavigation">
