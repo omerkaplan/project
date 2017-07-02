@@ -10,4 +10,24 @@
     ga('send', 'pageview');
   </script>
 {% endif %}
+
+<!-- JSON-LD, per page, should be good for SEO or so they say -->
+<script type="application/ld+json">
+{
+  "@context": "http://schema.org/",
+  "@type": "NewsArticle",
+  "headline": "{% if page.title %}{{ page.title }} | {% endif %}{{ site.title | default: site.github.repository_name }} by {{ site.owner_name }}",
+  "datePublished": "{{ page.date | date: "%-d %B ,%Y" }}",
+  "description": "{{ site.data.seo.meta_description }}",
+  "image": {
+    "@type": "ImageObject",
+    "height": "460",
+    "width": "702",
+    "url": "{{ site.url }}{{ site.img_path_url }}{{ page.image }}"
+  },
+  "author": "{{ site.owner_name }}",
+  "articleBody": "{{ content }}"
+}
+</script>
+
 </html>
