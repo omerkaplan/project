@@ -12,6 +12,7 @@ twitter_username: omerkaplan
 github_username:  omerkaplan
 github_repository_url: "https://github.com/omerkaplan/blog"
 img_share_default: "default.jpg"
+google_analytics: "UA-101975344-1"
 
 # Build settings
 markdown: kramdown
