@@ -10,7 +10,7 @@
     <div class="post-attribution">Updated at {{ page.date | date: "%B %-d ,%Y" }} #{{ page.categories }}</div>
     {% if page.image != empty %}
     <div class="post-image">
-      <img class="post-image" src="{{ site.img_path_url}}{{ page.image }}" alt="Photo by {{ page.image-credit }}">
+      <img class="post-image" src="{{ site.baseurl }}{{ site.img_path_url}}{{ page.image }}" alt="Photo by {{ page.image-credit }}">
       <div class="post-image-credit">
         <p>Photo by {{ page.image-credit }}</p>
       </div>
