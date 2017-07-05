@@ -10,7 +10,7 @@ baseurl: "/project" # the subpath of your site, e.g. /blog *NOTE* This is differ
 url: "/project" # the base hostname & protocol *NOTE* This is differnt from local file dure to testing 
 twitter_username: omerkaplan
 github_username:  omerkaplan
-github_repository_url: "https://github.com/omerkaplan/blog"
+github_repository_url: "https://github.com/omerkaplan/project"
 img_share_default: "default.jpg"
 google_analytics: "UA-101975344-1"
 
