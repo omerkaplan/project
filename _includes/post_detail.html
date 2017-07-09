@@ -6,7 +6,12 @@
     <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
 {% endif %}
 </h1>
-<div class="post-attribution">Updated at {{ post.date | date: "%B %-d ,%Y" }}  #{{ post.categories }}</div>
+<div class="post-attribution">#{{ post.categories }} &#8226 {{ post.date | date: "%B %-d ,%Y" }} &#8226 {% assign words = content | number_of_words %}
+{% if words < 360 %}
+1 min read
+{% else %}
+{{ words | divided_by:180 }} mins read
+{% endif %}</div>
 {% if post.image != empty %}
 <div class="post-image">
   <img class="post-image" src="{{ site.baseurl }}{{ site.img_path_url }}{{ post.image }}" alt="Photo by {{ post.image-credit }}"> <!-- Your image name is defined on the post page! magic!-->
