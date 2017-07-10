@@ -529,3 +529,12 @@ a {
         }
       }
     }
+
+    .categoty-info {
+      font-style: italic;
+      font-size: 1rem;
+      color: #A6AAAD;
+      margin-top: 30px;
+      border-top: solid 1px $hr-border-color;
+      padding-top: 2rem;
+    }

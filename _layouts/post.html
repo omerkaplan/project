@@ -12,7 +12,8 @@
   1 min read
 {% else %}
   {{ words | divided_by:180 }} mins read
-{% endif %}</div>
+{% endif %}
+  </div>
     {% if page.image != empty %}
     <div class="post-image">
       <img class="post-image" src="{{ site.baseurl }}{{ site.img_path_url}}{{ page.image }}" alt="Photo by {{ page.image-credit }}">
@@ -22,6 +23,10 @@
     </div>
     {% endif %}
     {{ content }}
+    <!-- Category description, included -->
+    {% capture page-cat %}{{ page.categories }}{% endcapture %}
+    {% include categoty-info.html %}
+    <!-- Next post, last post -->
     <div class="PageNavigation">
       {% if page.previous.url %}
       <a class="prev" href="{{page.previous.url}}">&laquo; {{page.previous.title}}</a>
