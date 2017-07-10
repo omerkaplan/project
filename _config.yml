@@ -23,6 +23,8 @@ plugins:
 #Sources
 img_path_url: "/assets/img/"
 
+feed:
+  path: feed.xml
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
