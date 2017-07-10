@@ -2,7 +2,7 @@
 layout: post
 title:  "Mission Statement"
 date:   2017-07-04 14:57:02 -0400
-categories: Meta
+categories: meta
 author: Omer Kaplan
 image: "vision.jpg"
 image-credit: "rawpixel.com"
