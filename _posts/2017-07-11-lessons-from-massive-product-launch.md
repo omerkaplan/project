@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Lessons from launching a massive product overhaul"
-date:   2017-07-12 09:00:00 -0400
+date:   2017-07-11 10:00:00 -0400
 categories: "retro"
 author: "Omer Kaplan"
 image: "adventure.jpg"
