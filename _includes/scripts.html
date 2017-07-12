@@ -18,6 +18,10 @@
   "@type": "NewsArticle",
   "headline": "{% if page.title %}{{ page.title }} | {% endif %}{{ site.title | default: site.github.repository_name }} by {{ site.owner_name }}",
   "datePublished": "{{ page.date | date: "%-d %B ,%Y" }}",
+  "publisher": {
+    "@type": "Organization",
+    "name": " {{ site.owner_name }}",
+  }
   "description": "{{ site.data.seo.meta_description }}",
   "image": {
     "@type": "ImageObject",
