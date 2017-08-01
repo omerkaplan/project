@@ -7,7 +7,7 @@ $(window).scroll(function() {
     if(y_scroll_pos > scroll_pos) {
 
       $('.page-header').hide();
-      $('.page-header-scroll').slideDown('slow');
+      $('.page-header-scroll').slideDown('fast');
       $('.main-content').css('padding-top','80px');
     };
 
