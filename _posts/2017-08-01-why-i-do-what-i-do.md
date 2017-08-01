@@ -7,7 +7,8 @@ author: Omer Kaplan
 image: "city.jpg"
 image-credit: "Anurag Arora"
 ---
-I was reading Lisette’s post “[From A To Z: A Short History Of My Professional Successes And Failures](https://medium.com/@lisettevoytko/from-a-to-z-a-short-history-of-my-professional-successes-and-failures-b57ee6341feb)” on Medium and started writing a reply when I suddenly realized I've been typing for 20 minutes. So instead pouring 800 words into Medium's comments here's my structured, articled yet definitely not as beautifully written. Lisette is the master of adjectives and colorful descriptions, go read her stuff.
+
+I was reading Lisette’s latest post on Medium _(link at the end of the post since that's a bug for some reason)_ and started writing a reply when I suddenly realized I've been typing for 20 minutes. So instead pouring 800 words into Medium's comments here's my structured, articled yet definitely not as beautifully written. Lisette is the master of adjectives and colorful descriptions, go read her stuff.
 
 I was supposed to be a journalist.
 
@@ -36,4 +37,6 @@ Going back to Lisette’s post, I was reading the parts that talk about burnout,
 
 Working on the same product for 5 years and doing product management for a little over 10, I don’t feel burnt out and in fact it’s not even in my top of mind. That’s not to say that everyday of my product life is unicorns, smiling emoji with sunglasses and charts that go up and to the right but whenever it’s intense, I go back to what’s important - touching people’s life, even for a brief period of time and leave them in a better state than I found them.
 
-This is why I do what I do. 
+This is why I do what I do.
+
+**[Original Post]** [From A To Z: A Short History Of My Professional Successes And Failures](https://medium.com/@lisettevoytko/from-a-to-z-a-short-history-of-my-professional-successes-and-failures-b57ee6341feb)
