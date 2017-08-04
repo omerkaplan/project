@@ -35,7 +35,7 @@ From doing the empathy thing for a while, I can tell that it’s sometimes scary
 ## What’s burnout?
 Going back to Lisette’s post, I was reading the parts that talk about burnout, all nighters, co-workers that create pressure to stay all night, answering Slack messages over the weekend - all real things in tech, and tried to think where so I stand in all this.
 
-Working on the same product for 5 years and doing product management for a little over 10, I don’t feel burnt out and in fact it’s not even in my top of mind. That’s not to say that everyday of my product life is unicorns, smiling emoji with sunglasses and charts that go up and to the right but whenever it’s intense, I go back to what’s important - touching people’s life, even for a brief period of time and leave them in a better state than I found them.
+Working on the same product for 5 years and doing product management for a little over 10, I don’t feel burnt out and in fact it’s not even on my top of mind. That’s not to say that everyday of my product life is unicorns, smiling emoji with sunglasses and charts that go up and to the right but whenever it’s intense, I go back to what’s important - touching people’s life, even for a brief period of time and leave them in a better state than I found them.
 
 This is why I do what I do.
 
