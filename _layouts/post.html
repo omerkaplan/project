@@ -12,6 +12,21 @@
   1 min read
 {% else %}
   {{ words | divided_by:180 }} mins read
+  <script>
+  // This script will calculate reading time and fire a GA event goal is someone read it
+    var calcRead = {{words | divided_by:3}};
+    var startTime = $.now();
+    var endTime = '';
+    var actualRead ='';
+    $(window).on("unload",function(){
+      endTime = $.now();
+      var actualRead = Math.round((endTime-startTime)/1000);
+  // if statement that will fire the GA event
+    if (actualRead >= calcRead) {
+      ga('send', 'event', 'Post', 'Read', 'Complete');
+    }
+    });
+  </script>
 {% endif %}
   </div>
     {% if page.image != empty %}
