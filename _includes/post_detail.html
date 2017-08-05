@@ -22,8 +22,8 @@
     var actualRead = Math.round((endTime-startTime)/1000);
 // if statement that will fire the GA event
   if (actualRead >= calcRead) {
-    ga('send', 'event', 'Post', 'Read', 'Complete');
-  } 
+    ga('send', 'event', 'Post', 'Read', '{{ post.title }}');
+  }
   });
 </script>
 {% endif %}</div>
