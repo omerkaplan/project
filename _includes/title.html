@@ -6,7 +6,8 @@
 
 <section class="page-header-scroll">
   <div class="project-name-scroll"><h1><a href="{{ site.url }}">{{ site.title }}</a></h1></div>
-  {% if page.title %} <!-- Display a share button if this is a post -->
+  <!--
+  {% if page.title %}
   <div class="share-post-title"><a class="twitter-share-button" target="_blank" href="https://twitter.com/intent/tweet?text=Nice%20read%20😎%20&quot;{{ site.posts.first }}&quot; - &url={{ site.url }}{{ page.url }}?ref=twitter&related=omerkaplan">
     <svg version="1.1"
     	 id="svg2" xmlns:cc="http://creativecommons.org/ns#" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:svg="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" inkscape:version="0.48.4 r9939" sodipodi:docname="Twitter_bird_logo_2012.svg"
@@ -27,6 +28,8 @@
     </svg>
      Share this post</a></div>
   {% endif %}
+-->
+
   <!--
   {% if page.url == "/" %}
   <div class="share-post-title"><a class="twitter-share-button" target="_blank" href="https://twitter.com/intent/tweet?text=Nice%20read%20😎%20&quot;{{ post.title }}&quot; - &url={{ site.url }}{{ page.url }}?ref=twitter&related=omerkaplan">
