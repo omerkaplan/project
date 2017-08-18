@@ -1,4 +1,6 @@
 <!--include head section, find it in the includes directory-->
+{% assign post = site.posts.first %}
+{% assign content = post.content %}
 {% include head.html %}
 
 <!--include title section, find it in the includes directory-->
@@ -9,8 +11,6 @@
 <!--Page's content goes below-->
 <section class="main-content">
   <!-- This code segement will show the latest post on the homepage-->
-  {% assign post = site.posts.first %}
-  {% assign content = post.content %}
   {% include post_detail.html %}
   <!--include footer section, find it in the includes directory-->
   {% include footer.html %}
