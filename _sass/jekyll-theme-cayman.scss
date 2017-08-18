@@ -113,7 +113,6 @@ a {
   text-align: left;
   position: fixed;
   width: 100%;
-  padding: 0.5rem 2rem 0.5rem 2rem;
   z-index: 1;
 
 }
@@ -122,7 +121,8 @@ a {
   margin-top: 0.2rem;
   margin-bottom: 0.1rem;
   text-decoration: none;
-  text-align: left;
+  float:left;
+  padding-left: 1.3rem;
   color: $header-heading-color;
 
 
@@ -571,4 +571,25 @@ a {
       margin-top: 30px;
       border-top: solid 1px $hr-border-color;
       padding-top: 2rem;
+    }
+
+    .share-post-title {
+      margin-top: 1.8rem;
+      margin-right: 3rem;
+      float:right;
+      }
+
+    .twitter-share-button {
+      background-color: #1B95E0;
+      padding: 0.5rem;
+      border-radius: 3px;
+      font-size: 11px;
+      color: #ffffff;
+
+      &:hover {
+      text-decoration: none;
+      color: #ffffff;
+      transition-duration: 0.3s;
+       background-color: #068BDA;
+      }
     }
