@@ -35,7 +35,7 @@ switch (ref) {
   case 'twitter':
         $('.hello-ref').show();
         $('.hello-ref').addClass('hello-ref-twitter');
-        $('.hello-ref-text').text('Hi Twitter people 👋 this text is brought to you by Hello-Ref plugin');
+        $('.hello-ref-text').text('Hi Twitter people 👋 this text is brought to you by Hello-Ref plugin. Nothing fancy to say, yet.');
         break;
 
   case 'github':
