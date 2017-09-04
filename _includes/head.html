@@ -16,7 +16,7 @@
     <meta property="og:locale" content="en_US">
     <meta property="og:url" content="{{ site.url }}{{ page.url }}">
     <meta property="og:type" content="article">
-    {% if page.layout == "post" %}<!-- FB cards properties for posts -->
+    {% if page.title %}<!-- FB cards properties for posts -->
     <meta property="og:title" content="{{ page.title }}">
     <meta property="og:description" content="{{ page.excerpt | strip_html | truncatewords: 250 }}">
     <meta property="og:image" content="{{ site.url }}{{ site.img_path_url }}{{ page.image }}">
