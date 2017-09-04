@@ -357,8 +357,7 @@ a {
     margin-left: 0;
     color: $blockquote-text-color;
     border-left: 0.3rem solid $border-color;
-
-    > :first-child {
+      > :first-child {
       margin-top: 0;
     }
 
@@ -366,6 +365,11 @@ a {
       margin-bottom: 0;
     }
   }
+
+    blockquote.summary {
+    border-left: 0.1rem solid #B30000;
+    color: #B30000;
+    }
 
   table {
     display: block;
