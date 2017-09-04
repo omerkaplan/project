@@ -29,9 +29,9 @@
     <!--Twitter share cards -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:site" content="@{{site.twitter_username}}">
-    {% if page.layout == "post" %}<!-- Twitter cards properties for posts -->
+    {% if page.title %}<!-- Twitter cards properties for posts -->
     <meta name="twitter:title" content="{{ page.title }}">
-    <meta name="twitter:description" content="{{ page.excerpt }}">
+    <meta name="twitter:description" content="{{ page.excerpt | strip_html | truncatewords: 250 }}">
     <meta name="twitter:image" content="{{ site.url }}{{ site.img_path_url }}{{ page.image }}">
     {% else %} <!-- Twitter cards properties for homepage or static pages -->
     <meta name="twitter:title" content="{{ site.title }}">
