@@ -367,8 +367,43 @@ a {
   }
 
     blockquote.summary {
-    border-left: 0.1rem solid #B30000;
-    color: #B30000;
+    border-left: 0.1rem solid $header-bg-color;
+    color: $header-bg-color;
+    line-height: 2rem;
+    margin-bottom: 10px;
+    }
+
+    blockquote.large {
+    border-left: 0rem;
+    color: $header-bg-color;
+    line-height: 2.5rem;
+    width: 100%;
+    margin-bottom: 3rem;
+
+    p {
+      color: $header-bg-color;
+      padding-left: 2rem;
+      margin-bottom: 1rem;
+      margin-top: 1rem;
+      font-size: 2rem;
+
+      @include medium {
+        font-size: 1.5rem;
+      }
+
+      @include small {
+        font-size: 1.5rem;
+      }
+    }
+    }
+
+    blockquote.large:before {
+    position:relative;
+    top: 30px;
+    display: block;
+    content: "\201C";
+    font-size: 80px;
+    color: $header-bg-color;
     }
 
   table {
