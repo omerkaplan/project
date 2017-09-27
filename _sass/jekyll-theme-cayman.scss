@@ -372,7 +372,7 @@ a {
       color: #159957;
       line-height: 2rem;
       margin-bottom: 10px;
-      background-color: #E0EDDE;
+      background-color: fade-out(#159957,0.9);
       padding-bottom: 1rem;
       padding-top: 1rem;
       width: 100%;
@@ -490,7 +490,6 @@ a {
 .site-footer {
   padding-top: 2rem;
   margin-top: 2rem;
-  border-top: solid 1px $hr-border-color;
 
   @include large {
     font-size: 1rem;
@@ -513,66 +512,15 @@ a {
 
 .site-footer-credits {
   color: $blockquote-text-color;
+  font-size: 0.9rem;
 }
 
-.PageNavigation {
-  font-size: 14px;
-  display: block;
-  width: auto;
-  overflow: hidden;
-  margin-top: 4.5em;
-}
-
-.PageNavigation a {
-  display: block;
-  width: 50%;
-  float: left;
-}
-
-.PageNavigation .next {
-  text-align: right;
-  text-overflow: ellipsis;
-  overflow: hidden;
-  white-space: nowrap;
-
-}
-
-.newsletter {
+.bottom-navigation {
   text-align: center;
   border: 1px solid #EFF0F1;
+  margin-top: 2em;
   padding: 20px;
-  margin: 5px;
   background-color: #F6F6F6;
-
-    input[type=submit] {
-      background-color: $header-bg-color;
-      color: white;
-      padding: 14px 20px;
-      margin: 8px 0;
-      border: none;
-      border-radius: 4px;
-      cursor: pointer;
-      -webkit-transition-duration: 0.4s; /* For Safari */
-      transition-duration: 0.4s;
-      }
-
-        input[type=submit]:hover {
-          background-color: #005E2E;
-        }
-
-
-      input[type=text] {
-        width: 60%;
-        background-color: White;
-        padding: 10px 30px;
-        border: none;
-        border-radius: 4px;
-        cursor: pointer;
-        }
-    }
-
-.topnav {
-  text-align: center;
 
       ul {
         list-style-type: none;
@@ -583,6 +531,7 @@ a {
       li {
         display: inline;
         padding-right: 15px;
+          font-size: 1rem;
 
         @include small {
           display: block;
@@ -637,3 +586,32 @@ a {
        background-color: #068BDA;
       }
     }
+
+  .latest-posts {
+    margin-top: 2rem;
+    border-top: solid 1px $hr-border-color;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    border-bottom: solid 1px $hr-border-color;
+
+    h3 {
+      color:$generic-color-blue;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    li {
+      color:$generic-color-blue;
+      padding-top: 15px;
+
+      &:hover {
+        text-decoration: underline;
+      }
+
+      a {
+        color:$generic-color-blue;
+      }
+    }
+  }

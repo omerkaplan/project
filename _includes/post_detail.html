@@ -36,15 +36,15 @@
 </div>
 {% endif %}
 <div class="entry-content">{{ content }}</div>
+
 <!-- Category description, included -->
 {% capture page-cat %}{{ post.categories }}{% endcapture %}
 {% include categoty-info.html %}
-<!-- Next post, last post -->
-<div class="PageNavigation">
-  {% if post.previous.url %}
-    <a class="prev" href="{{post.previous.url}}">&laquo; {{post.previous.title}}</a>
-  {% endif %}
-  {% if post.next.url %}
-    <a class="next" href="{{post.next.url}}">{{post.next.title}}&raquo;</a>
-  {% endif %}
-</div>
+
+<!-- Latest posts, will list the latest 5 posts in the _posts directory -->
+<div class="latest-posts"><h3>Latest Posts</h3>
+<ul>
+  {% for post in site.posts limit:5 %}
+  <li><a href="{{ post.url }}" onclick=”ga('send', 'event', 'Homepage', 'Used Latest Posts', '{{ post.title }}');”>{{ post.title }}</a></li>
+  {% endfor %}
+</ul></div>
