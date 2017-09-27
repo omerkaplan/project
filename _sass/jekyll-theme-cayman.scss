@@ -39,6 +39,7 @@ a {
 
   &:hover {
     text-decoration: underline;
+    color: $body-link-hover-color;
   }
 }
 
@@ -367,10 +368,14 @@ a {
   }
 
     blockquote.summary {
-    border-left: 0.1rem solid $header-bg-color;
-    color: $header-bg-color;
-    line-height: 2rem;
-    margin-bottom: 10px;
+      border-left: 0.1rem solid #159957;
+      color: #159957;
+      line-height: 2rem;
+      margin-bottom: 10px;
+      background-color: #E0EDDE;
+      padding-bottom: 1rem;
+      padding-top: 1rem;
+      width: 100%;
     }
 
     blockquote.large {
