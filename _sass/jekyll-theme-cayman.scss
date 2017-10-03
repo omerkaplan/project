@@ -311,6 +311,20 @@ a {
     }
   }
 
+  .entry-content {
+  a {
+    color: $body-text-color;
+    box-shadow: inset 0 -2px 0 $body-link-color;
+
+    &:hover {
+      color: $body-link-color;
+      text-decoration: none;
+      transition: 0.25s ease;
+    }
+  }
+
+  }
+
   .highlight {
     margin-bottom: 1rem;
 
@@ -514,6 +528,41 @@ a {
   color: $blockquote-text-color;
   font-size: 0.9rem;
 }
+
+
+.newsletter {
+  text-align: center;
+  border: 1px solid #EFF0F1;
+  padding: 20px;
+  margin: 5px;
+  background-color: #F6F6F6;
+
+    input[type=submit] {
+      background-color: $header-bg-color;
+      color: white;
+      padding: 14px 20px;
+      margin: 8px 0;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      -webkit-transition-duration: 0.4s; /* For Safari */
+      transition-duration: 0.4s;
+      }
+
+        input[type=submit]:hover {
+          background-color: #005E2E;
+        }
+
+
+      input[type=text] {
+        width: 60%;
+        background-color: White;
+        padding: 10px 30px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        }
+    }
 
 .bottom-navigation {
   text-align: center;
