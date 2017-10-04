@@ -46,11 +46,12 @@
     {% capture page-cat %}{{ page.categories }}{% endcapture %}
     {% include categoty-info.html %}
 
-    <!-- Latest posts, will list the latest 5 posts in the _posts directory -->
-    <div class="latest-posts"><h3>Latest Posts</h3>
+    <!-- Latest posts in the same category as the specific post -->
+
+    <div class="latest-posts"><h3>Latest Posts in #{{ page.categories }}</h3>
     <ul>
-      {% for post in site.posts limit:5 %}
-      <li><a href="{{ post.url }}" onclick=”ga('send', 'event', 'Post', 'Used Latest Posts', '{{ post.title }}');”>{{ post.title }}</a></li>
+      {% for post in site.categories[page-cat] %}
+      <li><a href="{{ post.url }}" onclick=”ga('send', 'event', 'Homepage', 'Used Latest Posts', '{{ post.title }}');”>{{ post.title }}</a></li>
       {% endfor %}
     </ul></div>
 
