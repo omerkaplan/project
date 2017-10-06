@@ -9,7 +9,7 @@ $(window).scroll(function() {
       $('.page-header').hide();
       $('.hello-ref').hide();
       $('.page-header-scroll').slideDown('fast');
-      $('.main-content').css('padding-top','80px');
+      $('.main-content').css('padding-top','7rem');
     };
 
 });

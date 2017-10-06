@@ -233,6 +233,7 @@ a {
     h1 {
         color: #1e6bb8;
         font-weight: bold;
+        margin-bottom: 0;
 
         @include large {
           font-size: 2.25rem;
@@ -274,6 +275,24 @@ a {
 
         }
       }
+
+  h2.entry-subtitle {
+     color: $blockquote-text-color;
+     font-weight: normal;
+     font-size: 1.5rem;
+     margin-top: 0;
+     margin-bottom: 1.5rem;
+
+     @include medium {
+       font-size: 1.5rem;
+     }
+
+     @include small {
+       font-size: 1.1rem;
+     }
+
+      }
+
 
   p {
     margin-bottom: 1em;
