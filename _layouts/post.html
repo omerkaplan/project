@@ -52,7 +52,7 @@
     <div class="latest-posts"><h3>Latest Posts in #{{ page.categories }}</h3>
     <ul>
       {% for post in site.categories[page-cat] %}
-      <li><a href="{{ post.url }}" onclick=”ga('send', 'event', 'Post', 'Navigate', '{{ post.title }}')”>{{ post.title }}</a></li>
+      <li><a href="{{ post.url }}" onClick=”ga('send', 'event', 'Navigation', 'Latest Posts', '{{ post.title }}');”>{{ post.title }}</a></li>
       {% endfor %}
     </ul></div>
 
