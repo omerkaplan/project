@@ -451,6 +451,8 @@ a {
     }
 
   table {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
     display: block;
     width: 100%;
     overflow: auto;
@@ -460,6 +462,7 @@ a {
 
     th {
       font-weight: bold;
+      background-color: $border-color;
     }
 
     th,
