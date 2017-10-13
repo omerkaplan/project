@@ -5,7 +5,7 @@ subtitle: "We got the tech to create beautiful viewing experience"
 date:   2017-10-12 10:00:00 -0400
 categories: "esports"
 author: "Omer Kaplan"
-image: "esports-ui.png"
+image: "esports-ui.jpg"
 image-credit: "League of Legends"
 ---
 
