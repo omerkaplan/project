@@ -296,6 +296,17 @@ a {
 
   p {
     margin-bottom: 1em;
+
+    a {
+      color: $body-text-color;
+      box-shadow: inset 0 -2px 0 $body-link-color;
+
+      &:hover {
+        color: $body-link-color;
+        text-decoration: none;
+        transition: 0.25s ease;
+      }
+    }
   }
 
   code {
@@ -495,6 +506,7 @@ a {
     background-color: $hr-border-color;
     border: 0;
   }
+
 
 } //Closer for main content
 
