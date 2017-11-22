@@ -510,14 +510,6 @@ a {
 
 } //Closer for main content
 
-.post-attribution {
-  color: #1e6bb8;
-  font-size: 0.8em;
-  display: block;
-  margin-bottom: 20px;
-  margin-top: -15px;
-}
-
 .post-image {
   max-width: 100%;
   img {
@@ -704,4 +696,80 @@ a {
         color:$generic-color-blue;
       }
     }
+  }
+
+  // post page header and navigation
+
+    .top-navigation {
+      display: block;
+      width: 100%;
+      background-color: black;
+      padding: 0.2rem 0 0.2rem 1rem;
+
+      a {
+        color: white;
+        font-size: 0.8rem;
+      }
+    }
+
+    .post-header {
+      vertical-align: middle;
+      margin-bottom: 2rem;
+
+    }
+
+    .post-header-image {
+      display: table;
+      position: relative;
+      height: 35rem;
+
+      &:after{
+       background:rgba(0, 0, 0, 0.3);
+       content: "";
+       width: 100%;
+       height: auto;
+       position: absolute;
+       z-index: 2;
+       top: 0;
+       right: 0;
+       left: 0;
+       bottom: 0;
+    }
+  }
+
+  .post-header-text {
+    display: table-cell;
+    vertical-align: middle;
+
+  }
+
+  .post-name {
+      margin: 0 10% 0 10%;
+      position: relative;
+      z-index: 4;
+      color: white;
+      text-align: center;
+
+      @include large {
+        font-size:4rem;
+      }
+
+      @include medium {
+        font-size: 3.5rem;
+      }
+
+      @include small {
+        font-size: 3rem;
+      }
+  }
+
+
+  .post-info {
+    z-index: 4;
+    position: relative;
+    color: white;
+    font-size: 0.9em;
+    text-align: center;
+    margin-top: 3%;
+    opacity: .9;
   }

@@ -3,45 +3,13 @@
 
 
 <!--include title section, find it in the includes directory-->
-{% include title.html %}
+{% include title-post.html %}
 <!--include hello-ref plugin-->
 {% include hello-ref.html %}
 
 <!--Page's content goes below-->
 
     <section class="main-content">
-    <h1 class="entry-title">{{ page.title }}</h1>
-    <h2 class ="entry-subtitle"> {{page.subtitle}}</h2>
-    <div class="post-attribution">#{{ page.categories }} &#8226 {{ page.date | date: "%B %-d ,%Y" }} &#8226 {% assign words = content | number_of_words %}
-{% if words < 360 %}
-  1 min read
-{% else %}
-  {{ words | divided_by:180 }} mins read
-  <script>
-  // This script will calculate reading time and fire a GA event goal is someone read it
-    var calcRead = {{words | divided_by:3}};
-    var startTime = $.now();
-    var endTime = '';
-    var actualRead ='';
-    $(window).on("unload",function(){
-      endTime = $.now();
-      var actualRead = Math.round((endTime-startTime)/1000);
-  // if statement that will fire the GA event
-    if (actualRead >= calcRead) {
-      ga('send', 'event', 'Post', 'Read', '{{ page.title }}');
-    }
-    });
-  </script>
-{% endif %}
-  </div>
-    {% if page.image != empty %}
-    <div class="post-image">
-      <img class="post-image" src="{{ site.baseurl }}{{ site.img_path_url}}{{ page.image }}" alt="Photo by {{ page.image-credit }}">
-      <div class="post-image-credit">
-        <p>Photo by {{ page.image-credit }}</p>
-      </div>
-    </div>
-    {% endif %}
     {{ content }}
     <!-- Category description, included -->
     {% capture page-cat %}{{ page.categories }}{% endcapture %}
