@@ -1,17 +1,34 @@
 <!--include head section, find it in the includes directory-->
-{% assign post = site.posts.first %}
-{% assign content = post.content %}
 {% include head.html %}
 
 <!--include title section, find it in the includes directory-->
-{% include title.html %}
+{% include title-homepage.html %}
 <!--include hello-ref plugin-->
 {% include hello-ref.html %}
 
 <!--Page's content goes below-->
 <section class="main-content">
-  <!-- This code segement will show the latest post on the homepage-->
-  {% include post_detail.html %}
+
+<div class="homepage-hello-world">
+{{ content }}
+</div>
+
+<h2>Latest Posts</h2>
+ <ul class="post-list">
+   {% for post in site.posts %}
+     <li>
+       {% assign date_format = site.cayman-blog.date_format | default: "%b %-d, %Y" %}
+       <span class="post-meta">{{ post.date | date: date_format }}</span>
+       <h2>
+         <a class="post-link" href="{{ post.url | relative_url }}" title="{{ post.title }}">{{ post.title | escape }}</a>
+       </h2>
+       <span class="post-meta-subtitle">{{ post.subtitle }}</span>
+     </li>
+   {% endfor %}
+ </ul>
+
+</div>
+
   <!--include footer section, find it in the includes directory-->
   {% include footer.html %}
 </section>

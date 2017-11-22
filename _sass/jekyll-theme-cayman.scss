@@ -773,3 +773,44 @@ a {
     margin-top: 3%;
     opacity: .9;
   }
+
+  // Homepage: Post list
+
+  /**
+ * Post list
+ */
+.post-list {
+  margin-left: 0;
+  list-style: none;
+
+  > li {
+    margin-bottom: 2.5rem;
+  }
+
+  > li > h2 {
+    margin-top: 0rem;
+    margin-bottom: 0.4rem;
+  }
+}
+
+.post-meta {
+  font-size: 0.8rem;
+  color: #606c71;
+}
+
+.post-meta-subtitle {
+  color: #606c71;
+}
+
+.post-link {
+  display: block;
+  font-weight: normal;
+}
+
+// Homepage: Hello world
+
+.homepage-hello-world {
+  background-color: #EDEDED;
+  border: 1px solid black;
+  padding: 2rem 1rem 1rem 2rem;
+}
