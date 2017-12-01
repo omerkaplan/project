@@ -35,6 +35,26 @@ In real life, users revolted when we took out the green dot. From a technical pe
 
 **Green dots used to be ooVoo's habitual cue for video communication**.
 
-Other than giving users a sense of "hey, I'm not alone out here, some of my friends are actually online and there's an community connected to this service", the green dot was the element that kicked off the habit of starting a group call with your friends something along the lines of -
+Other than giving users a sense of "hey, I'm not alone out here, some of my friends are actually online and there's an community connected to this service", the green dot was the element that kicked off the habit of starting a group call with your friends. Using the framework presented in "The power of habit", the loop would look something like this:
 
-I crave human connection** ► I see a green dot (cue) ► I ooVoo a friend (routine) ► I have good time talking (reward)
+I crave for human connection ► I see a green dot (cue) ► I ooVoo a friend (routine) ► I have good time talking (reward)
+
+## Too fast, too furious 🔥
+
+Another thing that caught people by surprise was the discrepancy between the positive reaction for making ooVoo a social network based on collaborative stories and the actual community resistance at scale. From initial user groups and power users small group testing, the concept of collaborative stories made sense and was well received but in real life, people steered away from the new and shiny and felt like the ground was dropped beneath their feet.
+
+From a habitual perspective, the change was introduced fast and too aggressively to a point that even though the UI was slick and the feature was conceptually appealing, users were scrambling to find the old and familiar and feeling shifted between confusion ("How do I find my friends?") to anger ("Why did you change my ooVoo?!") to desperation ("This whole update is confusing").
+
+**Keeping one hand in the old and familiar while "sandwiching" in new and innovative changes was most likely the way to go.**
+
+From conversations I had post launch with users, the sense of confusion became more evident that all this new-ness was maybe nice but took out one of the most important assets of ooVoo, that fact that is "Just works". Making ooVoo "just work" took a lot of time an effort and included very subtle changes to the UI and automating common pain points in order to remove as much cognitive overload as possible.
+
+Once the new update hit production, it was a new product a user had so take all in, make all the judgement calls whether he like it or not, go through the learning curve instead of just picking it up, use it and go.
+
+## To be continued 💡
+
+My notebook is getting filled with ooVoo shutdown insights every day so I'm sure there will be some follow up to this post. 1,000 words is my rough limit between something I'd digest over a read and something I'll chuck into my reading list as long-form.
+
+I'll close out with this though: ooVoo was an amazing product to work on over the years, outside of the great people I met along the way, my heart goes out to the hundreds of thousands of people who's life we got to touch and change for the better using technology.
+
+Much love.
