@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8">
     <title>{{ page.title }} 🤖❤️</title>
-    <meta name="description" content="{{ site.data.seo.meta_description }}"/>
+    <meta name="description" content="{{ site.data.seo.cheerbot_description }}"/>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="theme-color" content="#157878">
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
@@ -23,7 +23,7 @@
     <meta property="og:image" content="{{ site.url }}{{ site.img_path_url }}cheerbot/{{ page.image }}">
     {% else %} <!-- FB cards properties for homepage or static pages -->
     <meta property="og:title" content="{{ site.title }}">
-    <meta property="og:description" content="{{ site.data.seo.meta_description }}">
+    <meta property="og:description" content="{{ site.data.seo.cheerbot_description }}">
     <meta property="og:image" content="{{ site.url }}{{ site.img_path_url }}cheerbot/{{ site.img_share_default }}">
     {% endif %}
 
@@ -36,7 +36,7 @@
     <meta name="twitter:image" content="{{ site.url }}{{ site.img_path_url }}cheerbot/{{ page.image }}">
     {% else %} <!-- Twitter cards properties for homepage or static pages -->
     <meta name="twitter:title" content="{{ site.title }}">
-    <meta name="twitter:description" content="{{ site.data.seo.meta_description }}">
+    <meta name="twitter:description" content="{{ site.data.seo.cheerbot_description }}">
     <meta name="twitter:image" content="{{ site.url }}{{ site.img_path_url }}cheerbot/{{ site.img_share_default }}">
     {% endif %}
 
