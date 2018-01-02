@@ -20,11 +20,11 @@
     {% if page.title %}<!-- FB cards properties for posts -->
     <meta property="og:title" content="{{ page.title }}">
     <meta property="og:description" content="{{ page.excerpt | strip_html | truncatewords: 250 }}">
-    <meta property="og:image" content="{{ site.url }}{{ site.img_path_url }}\cheerbot\{{ page.image }}">
+    <meta property="og:image" content="{{ site.url }}{{ site.img_path_url }}cheerbot/{{ page.image }}">
     {% else %} <!-- FB cards properties for homepage or static pages -->
     <meta property="og:title" content="{{ site.title }}">
     <meta property="og:description" content="{{ site.data.seo.meta_description }}">
-    <meta property="og:image" content="{{ site.url }}{{ site.img_path_url }}\cheerbot\{{ site.img_share_default }}">
+    <meta property="og:image" content="{{ site.url }}{{ site.img_path_url }}cheerbot/{{ site.img_share_default }}">
     {% endif %}
 
     <!--Twitter share cards -->
@@ -33,11 +33,11 @@
     {% if page.title %}<!-- Twitter cards properties for posts -->
     <meta name="twitter:title" content="{{ page.title }}">
     <meta name="twitter:description" content="{{ page.excerpt | strip_html | truncatewords: 250 }}">
-    <meta name="twitter:image" content="{{ site.url }}{{ site.img_path_url }}\cheerbot\{{ page.image }}">
+    <meta name="twitter:image" content="{{ site.url }}{{ site.img_path_url }}cheerbot/{{ page.image }}">
     {% else %} <!-- Twitter cards properties for homepage or static pages -->
     <meta name="twitter:title" content="{{ site.title }}">
     <meta name="twitter:description" content="{{ site.data.seo.meta_description }}">
-    <meta name="twitter:image" content="{{ site.url }}{{ site.img_path_url }}\cheerbot\{{ site.img_share_default }}">
+    <meta name="twitter:image" content="{{ site.url }}{{ site.img_path_url }}cheerbot/{{ site.img_share_default }}">
     {% endif %}
 
 
