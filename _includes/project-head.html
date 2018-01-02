@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: "en-US" }}">
+  <head>
+    <meta charset="UTF-8">
+    <title>{{ page.title }} 🤖❤️</title>
+    <meta name="description" content="{{ site.data.seo.meta_description }}"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#157878">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    {% if page.title == 'CheerBot' %}
+    <link rel="stylesheet" href="{{ '/assets/css/style-project.css?v=' | append: site.github.build_revision | relative_url }}">
+    {% else %}
+    <link rel="stylesheet" href="{{ '/assets/css/style-project-page.css?v=' | append: site.github.build_revision | relative_url }}">
+    {% endif %}
+    <!--Facebook share cards, using open graph-->
+    <meta property="og:site_name" content="{{ site.title }}">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:url" content="{{ site.url }}{{ page.url }}">
+    <meta property="og:type" content="article">
+    {% if page.title %}<!-- FB cards properties for posts -->
+    <meta property="og:title" content="{{ page.title }}">
+    <meta property="og:description" content="{{ page.excerpt | strip_html | truncatewords: 250 }}">
+    <meta property="og:image" content="{{ site.url }}{{ site.img_path_url }}\cheerbot\{{ page.image }}">
+    {% else %} <!-- FB cards properties for homepage or static pages -->
+    <meta property="og:title" content="{{ site.title }}">
+    <meta property="og:description" content="{{ site.data.seo.meta_description }}">
+    <meta property="og:image" content="{{ site.url }}{{ site.img_path_url }}\cheerbot\{{ site.img_share_default }}">
+    {% endif %}
+
+    <!--Twitter share cards -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@{{site.twitter_username}}">
+    {% if page.title %}<!-- Twitter cards properties for posts -->
+    <meta name="twitter:title" content="{{ page.title }}">
+    <meta name="twitter:description" content="{{ page.excerpt | strip_html | truncatewords: 250 }}">
+    <meta name="twitter:image" content="{{ site.url }}{{ site.img_path_url }}\cheerbot\{{ page.image }}">
+    {% else %} <!-- Twitter cards properties for homepage or static pages -->
+    <meta name="twitter:title" content="{{ site.title }}">
+    <meta name="twitter:description" content="{{ site.data.seo.meta_description }}">
+    <meta name="twitter:image" content="{{ site.url }}{{ site.img_path_url }}\cheerbot\{{ site.img_share_default }}">
+    {% endif %}
+
+
+    <!-- Including Google Analytics. This is done in head  since we need to calculate post reading time -->
+
+      {% if site.google_analytics %}
+        <script type="text/javascript">
+          (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+          (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+          })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+          ga('create', '{{ site.google_analytics }}', 'auto');
+          ga('send', 'pageview');
+        </script>
+      {% endif %}
+  </head>
