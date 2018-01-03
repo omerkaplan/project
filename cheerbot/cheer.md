@@ -1,5 +1,5 @@
 ---
-title: Cheer
+title: 💌 A cheer from one of your Twitter friends 💌
 layout: cheerbot-cheer
 image: prev.png
 ---
