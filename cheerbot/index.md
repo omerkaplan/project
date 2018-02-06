@@ -4,8 +4,8 @@ layout: cheerbot
 image: prev.png
 ---
 
-### How does CheerBot work?
+### What can CheetBot do?
 
-1. Send a direct message to @cheer_robot with a name of a friend who could use a cheer, like so: **Cheer @friend**
-2. CheerBot will send random kind words to your friend - **they won't know it's from you!**
-3. Feel good about yourself, you made someone happy.
+* Send me with a name of a friend who could use a cheer, like so: **Cheer @friend** and I'll send them random kind words (they won't know it's from you)
+* <span style="color:red;font-weight:bold;">New!</span> Wake up every morning with a positive message just for you! ☀️ Send me **!daily** in a direct message and
+* More stuff coming soon! 😊

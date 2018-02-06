@@ -27,31 +27,4 @@ var ref = refArray[0]; // the good stuff
 document.title = (ref) + "'s" + ' cheer! 💌';
 document.getElementById('friend').innerHTML = ref;
 
-/* switch (ref) {
-
-  case 'facebook': //define ref here
-        $('.hello-ref').show();
-        $('.hello-ref').addClass('hello-ref-facebook');
-        $('.hello-ref-text').text('Hi Facebook people 👋 this text is brought to you by Hello-Ref plugin');
-        break;
-
-  case 'twitter':
-        $('.hello-ref').show();
-        $('.hello-ref').addClass('hello-ref-twitter');
-        $('.hello-ref-text').text('Hi Twitter people 👋 this text is brought to you by Hello-Ref plugin. Nothing fancy to say, yet.');
-        break;
-
-  case 'github':
-        $('.hello-ref').show();
-        $('.hello-ref').addClass('hello-ref-github');
-        $('.hello-ref-text').text('Hi Github people 👋 this text is brought to you by Hello-Ref plugin');
-        break;
-
-  case 'krush':
-        $('.hello-ref').show();
-        $('.hello-ref').addClass('hello-ref-krush');
-        $('.hello-ref-text').text('Hi Krush tech people 👋 this text is brought to you by Hello-Ref plugin');
-        break;
-} */
-
 }) //end of js file
