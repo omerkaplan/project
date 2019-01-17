@@ -295,7 +295,15 @@ a {
 
 
   p {
-    margin-bottom: 1em;
+    margin-bottom: 1.5em;
+    text-align: justify;
+    line-height: 2em;
+
+    @include small {
+      margin-right: 0.5em;
+      margin-left: 0.5em;
+      text-align: left;
+    }
 
     a {
       color: $body-text-color;
@@ -730,8 +738,12 @@ a {
       position: relative;
       height: 35rem;
 
+      @include small {
+        height: 20rem;
+      }
+
       &:after{
-       background:rgba(0, 0, 0, 0.6);
+       background:rgba(0, 0, 0, 0.75);
        content: "";
        width: 100%;
        height: auto;
@@ -766,7 +778,7 @@ a {
       }
 
       @include small {
-        font-size: 3rem;
+        font-size: 2rem;
       }
   }
 
@@ -779,6 +791,19 @@ a {
     text-align: center;
     margin-top: 3%;
     opacity: .9;
+  }
+
+  .post-info-homepage {
+    z-index: 4;
+    position: relative;
+    color: white;
+    font-size: 1.2em;
+    text-align: center;
+    margin-top: 3%;
+
+    @include small {
+      font-size: 1em;
+    }
   }
 
   // Homepage: Post list
