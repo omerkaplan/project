@@ -1,17 +1,41 @@
 
-//This section will minize the header when scolling and tuck it in nicely after.
+// Dark mode
 
-$(window).scroll(function() {
-    var y_scroll_pos = window.pageYOffset;
-    var scroll_pos = 300;
-    if(y_scroll_pos > scroll_pos) {
+function setDarkMode(){
+  $("body").toggleClass("body-darkmode");
+  $(".post-meta-subtitle").toggleClass("post-meta-darkmode");
+  $(".post-meta").toggleClass("post-meta-darkmode");
+  $(".post-name").toggleClass("post-name-darkmode");
+  $(".post-info-homepage").toggleClass("post-name-darkmode ");
+  $(".post-info").toggleClass("post-name-darkmode ");
+  $("h3").toggleClass("h3-darkmode");
+  $("h2").toggleClass("h2-darkmode");
+  $("th").toggleClass("th-darkmode");
+  $(".latest-posts").toggleClass("latest-posts-darkmode");
+  $(".bottom-navigation").toggleClass("bottom-navigation-darkmode");
+  $("a").toggleClass("a-darkmode");
+};
 
-      $('.page-header').hide();
-      $('.hello-ref').hide();
-      $('.page-header-scroll').slideDown('fast');
-      $('.main-content').css('padding-top','7rem');
-    };
+$(document).ready(function() {
 
+  $('#dark-mode-checkbox').click(function() {
+    if($(this).is(':checked')) {
+      console.log('Dark!');
+      Cookies.set('theme', 'dark', { expires: 365 });
+      setDarkMode()
+    } else {
+      console.log('Light!');
+      Cookies.set('theme', 'null', { expires: 365 });
+      setDarkMode()
+    }
 });
 
-// Next cool thing goes below
+if (Cookies.get('theme') == 'dark'){
+  $('#dark-mode-checkbox').prop('checked', true);
+  setDarkMode()
+}
+
+
+
+
+}); //EOF
