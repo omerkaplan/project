@@ -1,3 +1,5 @@
+@import "variables";
+
 .body-darkmode {
   background-color: #1f1f1f !important;
   color: #A6AAAD !important;
@@ -39,4 +41,8 @@
 
 .th-darkmode {
   background-color: darken(#1f1f1f,20%) !important;
+}
+
+.category-info-darkmode {
+  border-top: solid 1px darken($hr-border-color,60%) !important;
 }

@@ -21,7 +21,7 @@ First thing I did was to capture the `{{ page.categories }}` from a post and sen
 {% raw %}
   <!-- Category description -->
   {% capture page-cat %}{{ page.categories }}{% endcapture %}
-  {% include categoty-info.html %}
+  {% include category-info.html %}
 {% endraw %}
 {% endhighlight %}
 
@@ -40,7 +40,7 @@ Last step that binds everything together is actually create the `category-info.h
 
 {% highlight html %}
 {% raw %}
-<div class="categoty-info">#{{ page-cat} {{ site.data.cat-info.[page-cat] }}</div>
+<div class="category-info">#{{ page-cat} {{ site.data.cat-info.[page-cat] }}</div>
 {% endraw %}
 {% endhighlight %}
 

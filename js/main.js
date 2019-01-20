@@ -14,6 +14,8 @@ function setDarkMode(){
   $(".latest-posts").toggleClass("latest-posts-darkmode");
   $(".bottom-navigation").toggleClass("bottom-navigation-darkmode");
   $("a").toggleClass("a-darkmode");
+  $(".category-info").toggleClass("category-info-darkmode");
+
 };
 
 $(document).ready(function() {
