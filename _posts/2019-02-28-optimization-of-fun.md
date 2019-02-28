@@ -6,7 +6,7 @@ date:   2019-02-28 10:00:00 -0400
 categories: "200words"
 author: "Omer Kaplan"
 image: "anthem.jpg"
-image-credit: "Bioware\EA media"
+image-credit: "Bioware/EA media"
 ---
 
 I got to play the first 10 hours of Anthem, the new co-op third person action game from Bioware and had a pretty good time: The game is gorgeous from a design perspective and even more importantly, I got to play a transformer and to fly around in this amazing world mixing a tropical landscape and future tech.
