@@ -13,7 +13,7 @@ Every month or so, usually when I'm in a meeting with a new team or even with a 
 
 This question came up enough times this year that I feel like it's worth documenting in case I need to come back to it and refine.
 
-So why **do** I bring a notebook to meetings?[^1]
+So why **do** I bring a notebook to meetings? [^1]
 
 To me, meetings should be approached with the intent to listen. There is so much information blasted at us when a person explain even the most trivial thing we heard a billion times: Body language, the way they choose to emphasize certain topic and much more. It's almost there is so much information going on between the lines than it's almost equivalent to the one going into the lines themselves so adding whatever information is on a laptop screen (and will surely be there after the meeting is over) is just noise denying me from information I wouldn't be able to get otherwise.
 
