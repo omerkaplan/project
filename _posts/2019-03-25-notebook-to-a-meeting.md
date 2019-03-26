@@ -2,7 +2,7 @@
 layout: post
 title:  "Why do you bring a notebook to meetings?"
 subtitle: "People ask me this question on a monthly basis, might as well blurb about it"
-date:   2019-03-12 10:00:00 -0400
+date:   2019-03-25 10:00:00 -0400
 categories: "retro"
 author: "Omer Kaplan"
 image: "notebook.jpg"
