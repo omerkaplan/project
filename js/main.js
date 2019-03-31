@@ -20,13 +20,13 @@ function setDarkMode(){
 
 $(document).ready(function() {
 
+  Cookies.set('theme', 'dark', { expires: 365 });
+
   $('#dark-mode-checkbox').click(function() {
     if($(this).is(':checked')) {
-      console.log('Dark!');
       Cookies.set('theme', 'dark', { expires: 365 });
       setDarkMode()
     } else {
-      console.log('Light!');
       Cookies.set('theme', 'null', { expires: 365 });
       setDarkMode()
     }
