@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "The time merchant"
-subtitle: "I used the most corporate feature in the world to build better relationships"
+subtitle: "Some thoughts about time as capital"
 date:   2019-04-04 10:00:00 -0400
 categories: "200words"
 author: "Omer Kaplan"
