@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Nobody is talking about climbing down from mount Everest"
+title:  Nobody is talking about climbing down from mount Everest
 subtitle: "Also I'm happy I was able to get some insight out of a random article on the internet"
 date:   2019-05-29 10:00:00 -0400
 categories: "200words"
