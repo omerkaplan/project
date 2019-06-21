@@ -22,7 +22,7 @@ plugins:
 
 #Sources
 img_path_url: "https://s3.amazonaws.com/slashproject/img/" #main images path (header images)
-img_path_url_post: "/post" #individual posts images path
+img_path_url_post: "post" #individual posts images path
 
 feed:
   path: feed.xml

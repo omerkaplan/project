@@ -32,7 +32,7 @@
     <meta name="twitter:site" content="@{{site.twitter_username}}">
     {% if page.title %}<!-- Twitter cards properties for posts -->
     <meta name="twitter:title" content="{{ page.title }}">
-    <meta name="twitter:description" content="{{ page.excerpt | strip_html | truncatewords: 250 }}">
+    <meta name="twitter:description" content="{{ page.subtitle }}">
     <meta name="twitter:image" content="{{ site.img_path_url }}{{ page.image }}">
     {% else %} <!-- Twitter cards properties for homepage or static pages -->
     <meta name="twitter:title" content="{{ site.title }}">
