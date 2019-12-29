@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Everything I learnt about running Twitter bots (2018 edition) | /project</title>
+  <meta name="description" content=">TODO: Description"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#157878">
+
+
+
+    <!-- css -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="/theme/css/custom.css">
+
+
+    <!--favicons-->
+    <link rel="shortcut icon" type="image/x-icon" href="/theme/favicon/favicon.ico">
+    
+    <!-- bootstraping -->
+    <script
+			  src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+			  integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8="
+			  crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js" integrity="sha384-6khuMg9gaYr5AxOqhkVIODVIvm9ynTT5J4V1cfthmT+emCG6yVmEZsRHdxlotUnm" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/bfad879265.js" crossorigin="anonymous"></script>
+
+
+    <!-- Including Google Analytics. This is done in head  since we need to calculate post reading time -->
+
+        <script type="text/javascript">
+          (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+          (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+          })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+          ga('create', 'UA-101975344-1', 'auto');
+          ga('send', 'pageview');
+        </script></head>
+<body>
+ <div class="container-fluid">
+   <div class="row">
+     <div class="col p-0">
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="/">/project</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+
+    <ul class="navbar-nav mr-auto">
+
+<li class="nav-item">    <a class="nav-link" href="/category/blog"><span class="">/blog_posts</span></a>
+  </li>
+
+<li class="nav-item active">    <a class="nav-link" href="/category/project">/projects</a>
+  </li>
+
+</ul>
+<span class="navbar-text">made with<i class="fas fa-mug-hot mr-2 ml-2"></i>by <u><a class="text-muted" href="https://www.linkedin.com/in/omerkaplan/">Omer Kaplan</a></u></span>
+  </div>
+</nav>    </div>
+   </div>
+   <div class="row mt-3">
+      <div class="col-lg-8 col-md-12 ml-lg-5">
+<div class="row">
+ <div class="col-lg-8 col-md-12">
+  <h1 class="mt-3">Everything I learnt about running Twitter bots (2018 edition)</h1>
+  <small class="mr-2"><i class="far fa-calendar-alt mr-2"></i>25 November, 2017</small>
+  <small><i class="far fa-clock mr-2"></i>7 minutes read</small>
+  <div class="pt-5" id="article-content">
+  <p>For the past 10 years, I've been fortunate to be involved in making software that was adopted mostly by teenagers and fell in love with the demographic. Born into the hi-speed wifi era, teenagers are using the digital ecosystem the amplify and empower their relationships and social circles. Sometimes though, this ecosystem, especially around social networks, can bring out feelings of loneliness and being excluded from a community.</p>
+<p><strong>What's all that has to do with bots?</strong></p>
+<p>Around 7 months ago I went on a mission to use code to spread positivity and created <a href="http://slashproject.co/cheerbot">CheerBot</a>. CheerBot is a bot that lives on Twitter with one goal on its mind: Send positive messages to people that needs them the most. The thought process behind CheerBot is a simple one: Positive messages can come a long way, especially coming for our friends which we often times take for granted. Getting an occasional "you are loved" or "one of your friends wants you to know they have your back" at the right time proved to be transformational and the reactions to CheerBot so far are truly amazing.</p>
+<p>Building CheerBot exposed me to the Twitter API for the first time and gathered notes along the way. I went from not knowing what I'm doing and getting blocked by Twitter to going on vacation and keeping CheerBot running on 90% uptime (as long as I have internet, CheerBot is running). Here's my story.</p>
+<h2>The early days: Getting blocked by Twitter, a lot (how not to run a Twitter bot)</h2>
+<p>In the early days, the core flow for CheerBot was:</p>
+<ul>
+<li>A user sends a private message (DM) to CheerBot with the syntax: Cheer @friend</li>
+<li>CheerBot will tweet a random positive message at the friend "Hey @friend, one of your friends wants you know that you're not alone".</li>
+</ul>
+<p>What a rollercoaster it was. People responded super well to the concept and sending roughly 30 cheers per hour. Their friends got exposed to it, loved it and wanted to cheer other friends. Positivity  was spreading!</p>
+<p>The problem was I couldn't keep CheerBot up for more than a couple of hours straight. The "your application was restricted from performing write actions" (basically messaging people) screen happened a lot and users were disappointed when it wasn't consistently working and I was scrambling for a solution. What's worse is that as I was trying to figure out the issue the and tweak my code accordingly, the restriction happened more often, from hours to half-hours to minutes.</p>
+<p>My first reaction was "CheerBot is a positive project for the community, I should get a free pass!". I went through a full appeal process with Twitter's safety team, was re-granted access but got restricted shortly after, went through a discussion in the official forums - they won't respond to individual cases. Was looking into <a href="https://help.twitter.com/en/rules-and-policies/twitter-automation">Twitter's automation rules</a> - kind of ambiguous. I was feeling skeptical about CheerBot's future at this point. I even tried couple of moonshots like getting in touch with the Twitter community projects team and Twitters's sales team to get some insight on how big players are getting a pass doing similar things (hint: 💰).</p>
+<p>Then I actually got a hold of a nice person from Twitter's support who couldn't tell me much about how to go around the restriction rules but said the following: "CheerBot is a great positive project and I would hate to see it go. You have to understand that for each great project like yours we have hundreds of spammers and malicious projects. You're super driven, you'll find a way".</p>
+<h2>My path to 90% uptime, how to avoid restrictions</h2>
+<p>The following months after were a crazy research frenzy on how Twitter's spam protection actually works and what can I do to keep CheerBot's core functionality intact while not going into Twitter's red zone. Some of the information is <a href="https://blog.twitter.com/engineering/en_us/a/2014/fighting-spam-with-botmaker.html">available online</a>, some I got from Twitter agents I worked with in the past (obviously they couldn't spill the beans, but were helpful) and the majority of it I got though tons of trial and error and deduction.</p>
+<p>Over the past couple years Twitter has done some major leaps in detecting automated patterns and bot behavior, most of it through machine learning and to an extent it's a cat and mouse game between the bad people who use bots for phishing and scam and Twitter's security algorithms. The more a bot adopts patterns and usage habits that fits a human user, the more difficult is it to block it. In addition, automated services push tweets through the API that has its own rules on connections, how often can you tweet and who are you tweeting at in relation to the user that initiated the request.</p>
+<p>After a ton of research, there are couple of flow limitations that either flagged CheerBot or triggered a restriction:</p>
+<ul>
+<li>
+<p><strong>You don't want to send unsolicited @ mentions:</strong> Even though a user sent CheerBot a message and asked to cheer another person, that doesn't mean the other person gave his consent to receive a mention. Yes, as a user you can spam @ mentions to whoever you want, as an automated program this will get you flagged.</p>
+</li>
+<li>
+<p><strong>The ratio of @ mentions to other stuff matters:</strong> Looking at the bot account globally you want to have a reasonable ratio of @ mentions to other type of tweets. When CheerBot was all about the @'s, even though it had all the right rules in place to be user friendly, in ended up getting restricted every couple of days. So through trial and error I figured that diversity matters.</p>
+</li>
+<li>
+<p><strong>Don't do the obvious bad stuff:</strong> make sure people on the receiving and of tweets aren't being spammed, make sure links are appended correctly and if possible use Twitter cards if you're hosting the links since content of direct messages and tweets is also monitored.</p>
+</li>
+<li>
+<p><strong>Encourage positive interaction:</strong> Building credibility of CheerBot as an account was one of the things I believe is keeping it on the safe side of things. It was kind of easy for CheerBot since reactions were really positive and people are happy to engage with it (no brag! well just a bit) but overall, people liking, responding and on the backside not reporting the tweets made by the bot is what is giving it critical mass in being considered a positive force in Twitter's ecosystem.</p>
+</li>
+</ul>
+<h2>Here's my current working model for CheerBot</h2>
+<ul>
+<li>
+<p>CheerBot is working in 30 minute timeframes and has several spam checks.</p>
+</li>
+<li>
+<p>When you send CheerBot a private message (DM) and cheer a friend, it'll first check if you're sending multiple cheers to the same friend over a short period of time (if so, you're spamming cheers and CheerBot will ignore that).</p>
+</li>
+<li>
+<p>If the user level spam check clears, CheerBot will check how many cheers were sent overall during the 30 minute timeframe. if those are busy 30 minutes, CheerBot will apologise and tell you to try in a little while. I'm working on a queue system to save the cheer for when it's safe so the user isn't bothered. The thought process here is to avoid sending multiple @ tweets over a short period of time.</p>
+</li>
+<li>
+<p>When both personal and global checks are clear, I'm looking into the user's relationship with the person he'd like to cheer and that effect what type of tweet goes out: If the person being cheered follows both the user who sent the request and CheerBot, CheerBot <a href="https://twitter.com/Cheer_robot/status/998682674196828160">will send an @ mention to the person</a>. If the person follows the user but not CheerBot there is a very small number of those @ mentions that are being sent in a day and he may get it, but usually<a href="https://twitter.com/Cheer_robot/status/998214776214958080"> CheerBot will tweet on its own account</a> and encourage the friend to share it.</p>
+</li>
+<li>
+<p>After a cheer is being sent, CheerBot will check how many consecutive @ mentions was sent in the current timeframe and if needed, make a random cool tweet on the account.</p>
+</li>
+</ul>
+<h2>Additional stuff that helps</h2>
+<ul>
+<li>
+<p><strong>I try to combine both manual and automatic operations on the account:</strong> As a part of CheerBot's development I gather feedback, run surveys and talk to users from the account so I assume it makes it more human than a fully on automatic bot account.</p>
+</li>
+<li>
+<p><strong>A lot of stuff CheerBot do is slightly randomized</strong>: CheerBot can react very fast to every request but there is actually a small, random time between every user action and bot reaction. I'm sure Twitter's spam protection algorithm sees right through it but it makes me feel like it's not full on botting. I learnt that is also makes the user experience slightly better since there is a slight delay between a user sending a text and getting feedback, people tend to be more conversational with CheerBot rather than treat it like a bot.</p>
+</li>
+</ul>
+<p><strong>CheerBot's such a fun ride and I'm happy to try and help if you have have any questions about running a bot on Twitter.</strong></p>
+<p>Feel free to send a message my way <a href="https://twitter.com/OmerKaplan">@omerkaplan</a>!</p>
+  </div>
+  <hr class="mt-5">
+<div class="container" id="next-last-posts">
+  <div class="row mt-5">
+    <div class="col">
+  <a href="/power-of-the-oovoo-habit.html">
+    <i class="fas fa-arrow-left mr-2"></i> Power of the ooVoo habit
+</a>
+</div>
+
+<div class="col  text-right">
+    <a href="/reclaiming-energy.html">
+        Reclaiming Energy <i class="fas fa-arrow-right ml-2"></i>
+      </a>
+</div>
+</div>
+</div> </div>
+</div>
+      </div>
+   </div>
+   <div class="row mt-5">
+   </div>
+ </div>
+</body>
+</html>
