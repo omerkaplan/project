@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+
+{% block title %}{{ article.title }} | {{ SITENAME }}{% endblock %}
+
+{% block content %}
+<div class="row">
+ <div class="col-lg-8 col-md-12">
+  <h1 class="mt-3">{{ article.title }}</h1>
+  <small class="mr-2"><i class="far fa-calendar-alt mr-2"></i>{{ article.date|strftime('%d %B, %Y') }}</small>
+  <small><i class="far fa-clock mr-2"></i>{{article.readtime.minutes}} minutes read</small>
+  <div class="pt-5" id="article-content">
+  {{ article.content }}
+  </div>
+  <hr class="mt-5">
+  {% include "includes/next-last-posts-widget.html" %}
+ </div>
+</div>
+{% endblock %}

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>{% block title %}{% endblock %}</title>
+  <meta name="description" content=">TODO: Description"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#157878">
+
+ {% include "includes/head.html" %}
+</head>
+<body>
+ <div class="container-fluid">
+   <div class="row">
+     <div class="col p-0">
+     {% include "includes/navbar.html" %}
+    </div>
+   </div>
+   <div class="row mt-3">
+      <div class="col-lg-8 col-md-12 ml-lg-5">
+        {% block content %}{% endblock %}
+      </div>
+   </div>
+   <div class="row mt-5">
+   </div>
+ </div>
+</body>
+</html>
