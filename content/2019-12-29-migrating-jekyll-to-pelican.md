@@ -63,6 +63,8 @@ The only thing that sucked is that for some reason Google gives back search resu
 
 Jekyll have a seamless, pretty sweet integration with GitHub pages and it was panicking to lose that for 30 seconds but the documentation has a good solution for that as well and within 5 minutes I was up and running on production. No SSL issues or anything. 
 
+**24 hours later update**: OK comparing to Jekyll, deploying to GitHub pages is still a bit underdeveloped. Jekyll has this slick integration where it builds the site automatically from the source code while Pelican make you build the site yourself and push to a different branch. I lost an hour or two to messing around with Git error messages. 
+
 In terms of maintenance I don't foresee any major issues as I took time to simplify the code itself. I do have to make some additional steps to set up my IDE every time I sit down to maintain the code but based on last year's commits, it should be fine (it's a [YAGNI](https://martinfowler.com/bliki/Yagni.html) case for sure.)
 
-All in all, 9\10 would migrate again. Or just stick to Python for a few years, let's do that. 
+All in all, 8.6\10 would migrate again. Or just stick to Python for a few years, let's do that. 
