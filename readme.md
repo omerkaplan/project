@@ -7,4 +7,8 @@
 
 ## Deploying things
 
-1. ghp-import output -b gh-pages
+*** dont checkout to ph-pages or all hell will break loose ***
+
+$ pelican content -o output -s pelicanconf.py
+$ ghp-import output -b gh-pages
+$ git push origin gh-pages
