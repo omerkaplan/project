@@ -51,6 +51,10 @@ SOCIAL = (('You can add links in your config file', '#'),
 
 FORMATTED_FIELDS = ['']
 
+# Static paths tells Pelican to copy those assets to the output directory
+STATIC_PATHS = ['extra/CNAME']
+
 EXTRA_PATH_METADATA = {
     'static/favicon/favicon.ico': {'path': 'favicon.ico'},
+    'extra/CNAME': {'path': 'CNAME'},
     }
