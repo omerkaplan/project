@@ -2,12 +2,19 @@
 body, #images, #images a {
   font-family: 'Lato', sans-serif !important; }
 
+/* globals */
 p {
   font-size: 1.1em; }
 
 h2 {
   padding-bottom: 0.3em;
   padding-top: 0.3em; }
+
+pre {
+  padding: 1em 0em 1em 1em;
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
 
 /* article */
 #article-content {
