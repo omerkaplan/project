@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Jekyll post read time and conversion tracking | /project</title>
+  <meta name="description" content="Projects, blog posts and things by Omer Kaplan"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#157878">
+
+
+
+    <!-- css -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="/theme/css/custom.css">
+    <link rel="stylesheet" type="text/css" href="/theme/css/pygment.css">
+
+
+    <!--favicons-->
+    <link rel="shortcut icon" type="image/x-icon" href="/theme/favicon/favicon.ico">
+
+    <!-- bootstraping -->
+    <script
+			  src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+			  integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8="
+			  crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js" integrity="sha384-6khuMg9gaYr5AxOqhkVIODVIvm9ynTT5J4V1cfthmT+emCG6yVmEZsRHdxlotUnm" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/bfad879265.js" crossorigin="anonymous"></script>
+
+
+    <!-- Including Google Analytics. This is done in head  since we need to calculate post reading time -->
+
+        <script type="text/javascript">
+          (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+          (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+          })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+          ga('create', 'UA-101975344-1', 'auto');
+          ga('send', 'pageview');
+        </script></head>
+<body>
+ <div class="container-fluid">
+   <div class="row">
+     <div class="col p-0">
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="/">/project</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+
+    <ul class="navbar-nav mr-auto">
+
+<li class="nav-item">    <a class="nav-link" href="/category/blog"><span class="">/blog_posts</span></a>
+  </li>
+
+<li class="nav-item active">    <a class="nav-link" href="/category/project">/projects</a>
+  </li>
+
+  <li class="nav-item">
+    <a class="nav-link" href="/feeds/all.atom.xml">/rss_atom</a>
+  </li>
+
+  <li class="nav-item">
+    <a class="nav-link" href="/about">/about</a>
+  </li>
+
+</ul>
+<span class="navbar-text">made with<i class="fas fa-mug-hot mr-2 ml-2"></i>by <u><a class="text-muted" href="https://www.linkedin.com/in/omerkaplan/">Omer Kaplan</a></u></span>
+  </div>
+</nav>    </div>
+   </div>
+   <div class="row mt-3">
+      <div class="col-lg-8 col-md-12 ml-lg-5">
+<div class="row">
+ <div class="col-lg-8 col-md-12">
+  <h1 class="mt-3">Jekyll post read time and conversion tracking</h1>
+  <small class="mr-2"><i class="far fa-calendar-alt mr-2"></i>18 August, 2017</small>
+  <small class="mr-2"><i class="far fa-clock mr-2"></i>3 minutes read</small>
+<small class="mr-2"><i class="fas fa-laptop-code mr-2"></i>Jekyll</small>  <div class="pt-5" id="article-content">
+  <p>Lately I’ve been learning some Javascript and thought it’ll be really nice to get out of the course’s projects and mess around with some real-life implementation (that’s not to say that being the 100,00th programmer that writes a rock-paper-scissors game in Javascript isn’t important 😅).</p>
+<h2>“How many people read a post all the way through?”</h2>
+<p>The goal of this project is to use Google Analytics’ conversion goal tracking in order to try and estimate how many people read a post all the way through.</p>
+<p>The overall plan was to take the <code>estimated reading time</code> feature and compare it to the <code>time the user is actually spending on the page</code>. If the user spends more time on page than the estimated reading time, it's a conversion and we should send an event to Google Analytics 🎉 if not, don't do anything.</p>
+<h2>Step 1: Calculate the estimated reading time</h2>
+<p>I was always impressed by how sites like <a href="https://www.medium.com">Medium</a> show an estimated reading time on each post. Apparently that it's largely based on several researches done on how many words per minute we read on average [<a href="http://ezinearticles.com/?What-is-the-Average-Reading-Speed-and-the-Best-Rate-of-Reading?&amp;id=2298503">Read more</a>].</p>
+<p>You could go ahead and grab all the words in a post, parse them in Javascript and parse the words. Luckily, Carlos Alexanndro Becker <a href="https://carlosbecker.com/posts/jekyll-reading-time-without-plugins/">wrote a code snippet</a> in Liquid that does the same thing using <code>content | number_of_words</code> we get for free in jekyll. PHEW 😅</p>
+<p _="%" endhighlight>{% highlight liquid %}
+{% raw %}
+{% assign words = content | number_of_words %}
+{% if words &lt; 360 %}
+  1 min read
+{% else %}
+  {{ words | divided_by:180 }} mins read
+{% endraw %}</p>
+<h2>Step 2: Get the user's time on screen</h2>
+<p>That was my main Javascript and jQuery practice. Whenever you go into a page, I take a timestamp and then on <code>unload</code> take another and do a quick math comparing it to the estimated reading time we grabbed from step 1.</p>
+<p _="%" endhighlight>{% highlight javascript %}
+{% raw %}
+<script>
+  var calcRead = {{words | divided_by:3}}; //converts 'words' time to seconds
+  var startTime = $.now();
+  var endTime = '';
+  var actualRead ='';
+  $(window).on("unload",function(){
+    endTime = $.now();
+    var actualRead = Math.round((endTime-startTime)/1000);
+    if (actualRead &gt;= calcRead) {
+    ga('send', 'event', 'Post', 'Read', '{{ page.title }}');
+  }
+  });
+</script>
+{% endraw %}</p>
+<h2>Open issues, things to improve</h2>
+<p>There are some open issues that can improve this super simple script: From running with it live around two weeks I've seen that if someone forgets a tab open I still send a conversion event even after 40+ minutes. The general assumption going into this exercise is that someone will take a reasonable amount of time to read a post, maybe one way to approach it should be firing the event if the conversion happen within 5 minutes of goal time.</p>
+<p>I'm personally a fast reader, so when it comes to long form writing I may finish reading before the estimated reading time, that's also a consideration. In that regard, from a design perspective there is merit to take people who "skim" through the post and send a different conversion for them.</p>
+<p>Anyhow, hope you find this useful ☺️</p>
+  </div>
+  <hr class="mt-5">
+<div class="container" id="next-last-posts">
+  <div class="row mt-5">
+    <div class="col">
+  <a href="/posts/2017/why-i-do-what-i-do-a-reply-to-lisettevoytko/">
+    <i class="fas fa-arrow-left mr-2"></i> "Why I do what I do, a reply to @lisettevoytko"
+</a>
+</div>
+
+<div class="col  text-right">
+    <a href="/posts/2017/how-people-read-the-web-and-the-rise-of-blockquote/">
+        How people read the web and the rise of blockquote <i class="fas fa-arrow-right ml-2"></i>
+      </a>
+</div>
+</div>
+</div> </div>
+</div>
+      </div>
+   </div>
+   <div class="row mt-5">
+   </div>
+ </div>
+</body>
+</html>

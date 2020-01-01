@@ -6,6 +6,10 @@ from livereload import Server
 AUTHOR = 'Omer Kaplan'
 SITENAME = '/project'
 SITEURL = ''
+ARTICLE_URL = 'posts/{date:%Y}/{slug}/'
+ARTICLE_SAVE_AS = 'posts/{date:%Y}/{slug}/index.html'
+PAGE_URL = '{slug}/'
+PAGE_SAVE_AS = '{slug}/index.html'
 
 PATH = 'content'
 

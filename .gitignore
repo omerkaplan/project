@@ -5,3 +5,4 @@ _site
 /lib
 .Python
 __pycache__
+.DS_Store
