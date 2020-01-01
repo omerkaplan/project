@@ -10,7 +10,7 @@ Creating a positive impact through empathy, innovation and meaningful use of tec
 
 ## talking to me
 
-This blog doesn't have comments but talking to other people is a huge part of what I do and I always escited meeting and learning about new people, challenges and tech things.<br/>You can find me at -
+This blog doesn't have comments but talking to other people is a huge part of what I do and I always excited meeting and learning about new people, challenges and tech things.<br/>You can find me at -
 
 <raw><i class="fab fa-twitter mr-2"></i></raw> [@omerkaplan on twitter](https://twitter.com/omerkaplan)
 
