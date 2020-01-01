@@ -17,9 +17,11 @@ TIMEZONE = 'America/New_York'
 
 DEFAULT_LANG = 'en'
 
+LOCALE = 'en_US'
+
 THEME = './theme/minimalist/'
 
-PLUGINS = ['neighbors','readtime']
+PLUGINS = ['neighbors','readtime','open_graph']
 
 DEFAULT_ORPHANS = 0
 
