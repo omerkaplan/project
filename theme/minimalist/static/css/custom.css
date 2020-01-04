@@ -9,6 +9,9 @@ h2 {
   padding-bottom: 0.3em;
   padding-top: 1.3em; }
 
+pre {
+  padding: 1.3em; }
+
 /* article */
 #article-content {
   line-height: 2em; }
