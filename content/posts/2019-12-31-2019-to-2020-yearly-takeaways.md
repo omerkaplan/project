@@ -17,7 +17,7 @@ Here's how 2019 looks like -
 
 ![my 2019 monthly mood chart](https://slashproject.s3.amazonaws.com/img/post/2019-mood-chart.jpg)
 
-Suprinsgly, this pattern is faily similar to my daily cylcial pattern [i was writing about in june](/posts/2019/no-email-before-1100am) after reading a book discussing the effect of time and timing on our habits and daily performance. The main takeaway here is taking extra time to plan and think through the middle portion of something I have planned since it's apperantly have an effect. 
+Suprinsgly, this pattern is faily similar to my daily cylcial pattern [i was writing about in june](/posts/2019/no-email-before-1100am) after reading a book discussing the effect of time and timing on our habits and daily performance. The main takeaway here is taking extra time to plan and think through the middle portion of something I have planned since it's apperantly have an effect.
 
 Whether it's the middle portion of a project, middle of the day or the Q2 of a year, it's worth giving this part some extra attention so I can start and finish strong, but also have the hooks in place to have a good middle point grind. A nice refernce to how important the middle portion is can be found is Brené Brown's book "Rising strong" where she talks about her discovery workshop where day 2 (the middle part) is the day that enables the major breakthroughs or as she puts it: **_"you can't skip day 2"_**.
 
