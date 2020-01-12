@@ -15,13 +15,13 @@ In the book, Malcolm Gladwell is covering three major themes through storytellin
 
 When I look at those three facets holistically, _talking to strangers_ becomes a story about identity, of both ourselves' and the people we are interacting with in our everyday lives. I'm going to focus on the interaction part, keep the self-investigation part for some other time.
 
-## my two guiding principals for talking to ~~strangers~~ people
+## my two guiding principals for talking to <s>strangers</s> people
 
 The chaotic thing about talking to strangers is that every time we interact with people, we interact with a snapshot of that person in the current moment: Who we are right now is not who we were yesterday and most definitely not who we were 3 or 5 years ago. So even if we think we know a person (which according to Gladwell, we really don't unless we take into account contextual and environmental factors) we only really know them for the period of time in which we interact.
 
 When trying to cope with all that mess and trying to think how am I dealing with talking to strangers (or less than strangers) I came up with two guiding principals that I've been practicing for a very long time and they both help me with the interaction itself or post-processing it.
 
-The first one if the **language of feeling and needs** portrayed in the best way possible in Marshall B. Rosenberg's book [Nonviolent Communication](https://www.amazon.com/Nonviolent-Communication-Language-Life-Changing-Relationships-ebook/dp/B014OISVU4). When it comes to the core of human interaction, Marshall Rosenberg writes that we are driven by requests that are combination of feelings and needs. I'm paraphrasing a little but the subtext of requests is something along the lines of "I need ____ because I feel ____".
+The first one if the **language of feeling and needs** portrayed in the best way possible in Marshall B. Rosenberg's book [Nonviolent Communication](https://www.amazon.com/Nonviolent-Communication-Language-Life-Changing-Relationships-ebook/dp/B014OISVU4). When it comes to the core of human interaction, Marshall Rosenberg writes that we are driven by requests that are combination of feelings and needs. I'm paraphrasing a little but the subtext of requests is something along the lines of - `I need ____ because I feel ____`.
 
 Of course, we don't really know what goes into those blanks so according to the principals of nonviolent communication, our best course of action is empathy, listening and openness (as oppose to judgement and diagnosis that is often a projection of our set of heuristics and prejudice on a situation). That's exactly what I try to do when I'm in a conversation and it's not always easy: In a world where we really like to help and very solution oriented, it's very tempting to go "I think I get you, here's how to solve it" but I found out that the more I listen, the more accurate and honest the request from the other person become.
 
