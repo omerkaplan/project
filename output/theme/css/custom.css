@@ -16,4 +16,11 @@ pre {
 #article-content {
   line-height: 2em; }
 
+blockquote {
+  padding-left: 3em;
+  border-left: 1px solid;
+  color: grey;
+  margin-top: 2em;
+  margin-bottom: 2em; }
+
 /*# sourceMappingURL=custom.css.map */
