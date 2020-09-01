@@ -8,6 +8,10 @@ p {
   font-size: 1.1em;
 }
 
+h1 {
+  font-weight: bold;
+}
+
 h2 {
   padding-bottom: 0.3em;
   padding-top: 1.3em;
@@ -29,4 +33,10 @@ blockquote {
 	color: grey;
 	margin-top: 2em;
 	margin-bottom: 2em;
+}
+
+#related-posts-list {
+  font-size: 0.95rem;
+  background-color: #efefef;
+  color: #00000070;
 }

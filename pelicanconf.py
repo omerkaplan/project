@@ -21,7 +21,7 @@ LOCALE = 'en_US'
 
 THEME = './theme/minimalist/'
 
-PLUGINS = ['neighbors','readtime','open_graph']
+PLUGINS = ['neighbors','readtime','open_graph','related_posts']
 
 DEFAULT_ORPHANS = 0
 

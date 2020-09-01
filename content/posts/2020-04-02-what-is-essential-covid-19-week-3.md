@@ -2,6 +2,7 @@ Title: what is essential: COVID-19 week 3 learnings
 Date:   2020-04-02 09:00:00 -0400
 Category: blog
 Summary: thoughts on essentialism at work, managing time and expectations 
+Tags: test
 
 Week 3 of COVID-19 is almost over, and we made it through March '20 - phew! Looking back at my notes from the past month or even from two weeks ago, everything seems as if it happened three months ago. It's like between the rapid changes in how we work and manage our everyday lives time has managed to stretch so everything seems jumbled. 
 
