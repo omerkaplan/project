@@ -2,6 +2,7 @@ Title:  Auto Pilot Off
 Summary: Finding intention behind those boring, repetitive mundane tasks
 Date:   2019-01-27 10:00:00 -0400
 Category: blog
+Tags: Self, Mental
 
 
 Adulting can be tedious and Sundays are the culmination of my mundane responsibility  tasks: As I'm writing this post I'm at the tail-end of a chain that included highlights like "cook launch for four", "fold 2 loads of laundry",  and "cook dinner" is just around the corner.

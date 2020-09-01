@@ -2,6 +2,7 @@ Title:  Optimization of fun
 Summary: I got to play a transformer and fly! Why aren't people happy
 Date:   2019-02-28 10:00:00 -0400
 Category: blog
+Tags: Gaming
 
 I got to play the first 10 hours of Anthem, the new co-op third person action game from Bioware and had a pretty good time: The game is gorgeous from a design perspective and even more importantly, I got to play a transformer and to fly around in this amazing world mixing a tropical landscape and future tech.
 

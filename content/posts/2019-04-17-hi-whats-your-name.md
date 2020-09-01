@@ -2,6 +2,7 @@ Title:  Hi, what's your name?
 Summary: I went to St. Louis and came back with an insight
 Date:   2019-04-17 10:00:00 -0400
 Category: blog
+Tags: Self, Gaming, Social
 
 At work or in real life encounters I am usually the extrovert type of person: Feeling good around people, always up to tell a story in a conversation and feeling really recharged and exhilarated afterwards. However, when running solo in conventions or big crowd events all I want to do is go and hide in some corner switching to full on introvert mode.
 

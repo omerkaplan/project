@@ -1,6 +1,7 @@
 Title:  How people read the web and the rise of blockquote
 Date:   2017-09-04 10:00:00 -0400
 Category: blog
+Tags: Product Management
 
 >**Summary**
 * According to Nielsen Norman Group, 84% of the people skim through web conent.

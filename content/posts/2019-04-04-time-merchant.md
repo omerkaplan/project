@@ -2,6 +2,7 @@ Title:  The time merchant
 Summary: "Some thoughts about time as capital"
 Date:   2019-04-04 10:00:00 -0400
 Category: blog
+Tags: Self, Time, Mental 
 
 
 Over the past month I've been giving my daily habits a hard look, asking a lot of 'why's and how can I use my time (mostly leisure, post work time) to benefit things I value.  One theme that kept coming back during this introspection was time: Does this activity worth my time? If so, how much time should I put into it?

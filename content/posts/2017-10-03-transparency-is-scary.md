@@ -1,7 +1,8 @@
 Title:  Transparency is scary
 Summary: Talking directly to your product's community can be dreadful. My solution is to just own it
+Category: blog
 Date:   2017-10-03 10:00:00 -0400
-Category: "retro"
+Tags: Product Management, Mental, ooVoo
 
 
 I was just reading a post on Ars Technica titled ["Overwatch director says it’s “scary” to be open with players"](https://arstechnica-com.cdn.ampproject.org/c/s/arstechnica.com/gaming/2017/10/overwatch-director-says-its-scary-to-be-open-with-players/?amp=1). The tl;dr on this one is that Jeff Kaplan, game director for Overwtach, posted a long replay on the game's official forums talking about the community backlash when developers  post to the point they just holding back.

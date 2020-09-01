@@ -2,6 +2,7 @@ Title:  Reclaiming Energy
 Summary: Yearly re-focus, should happen way more often honestly
 Date:   2019-01-16 10:00:00 -0400
 Category: blog
+Tags: Self, Mental
 
 2018 was the year where I picked up recording and production, got back on my exercising horse (which got pushed aside with my latest programming project) and speaking of programming, I also trained myself on programming in Python and actively working on a full-stack web project - all while staying on top of a super dynamic and awesome full time job.
 

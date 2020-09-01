@@ -1,6 +1,7 @@
 Title:  Lessons from launching a massive product overhaul
 Date:   2017-07-11 10:00:00 -0400
 Categories: blog
+Tags: Product management, ooVoo
 
 As I’m writing those lines, I’m playing a part in the launch of the new version of ooVoo, currently the largest independent video calling application. Without going into the product, tech and strategy reasons of the upgrade, the new ooVoo is kind of a big deal to the company but most importantly the users.
 

@@ -5,6 +5,7 @@ Summary:  totally not morbid thoughts about biology and creating impact
 Author: Omer Kaplan
 Image: cookies.jpg
 Image-credit: John Dancy
+Tags: Self, Time, Mental
 
 Maybe it's from working around healthcare professionals and being exposed to some tough individuel stories or maybe it's from reading [the last lecture](https://www.amazon.com/Last-Lecture-Randy-Pausch/dp/1401323251) not too long ago,  I had this thing dawn on me:
 

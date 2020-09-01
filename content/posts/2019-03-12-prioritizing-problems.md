@@ -2,6 +2,7 @@ Title:  Prioritizing Problems
 Summary: To create positive impact through empathy, innovation and meaningful use of technology
 Date:   2019-03-12 10:00:00 -0400
 Category: blog
+Tags: Product Management, Self
 
 
 Here's an interesting sentence I just picked up while reading this interesting product management book -

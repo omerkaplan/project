@@ -2,6 +2,7 @@ Title:  Personalized and Actionable
 Summary: User feedback that blew my mind + followup questions
 Date:   2019-02-06 10:00:00 -0400
 Category: blog
+Tags: Gaming, Self, esports
 
 User feedback is often insightful but sometimes it's mind blowing and inspirational: A recent review I got started with the usual "Love you website, very useful to me" and so on but then he ended up with something along the lines of "I find myself looking for a more personalised experience, other wise it's not very actionable to me".
 

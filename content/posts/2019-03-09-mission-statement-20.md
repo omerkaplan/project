@@ -2,6 +2,7 @@ Title:  Mission Statement 2.0
 Summary: To create positive impact through empathy, innovation and meaningful use of technology
 Date:   2019-03-09 10:00:00 -0400
 Category: blog
+Tags: Self, Mission
 
 
 > To create positive impact through empathy, innovation and meaningful use of technology.

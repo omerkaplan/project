@@ -2,6 +2,7 @@ Title: Talking to strangers: Book review
 Date:   2020-01-12 11:22:00 -0400
 Category: blog
 Summary:  book review of Malcolm Gladwell's latest and my principals of talking to strangers
+Tags: Book Review
 
 This post started as a book review for Malcolm Gladwell's latest book, "[Talking to Strangers](https://www.amazon.com/Talking-Strangers-Should-About-People/dp/B07NJCG1XS/)". Halfway through I felt like there are enough "classic" book review out there ([the NYT one is pretty good](https://www.nytimes.com/2019/09/04/books/review-talking-to-strangers-malcolm-gladwell.html)) and a more interesting take would be looking into my learnings, how "talking to strangers" effected me and what will I probably retain from it.
 

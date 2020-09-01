@@ -2,6 +2,7 @@ Title: 2019 → 2020: Yearly takeaways
 Date:   2019-12-31 11:00:00 -0400
 Category: blog
 Summary:  switching decades, some retrospect on the past year
+Tags: Self, EOY
 
 For the past two years on December 31<sup>st</sup>  I made it a habit to take some off work and go on a full day personal workshop with a very simple simple structure: Half the day goes towards digging deep into the past year; reviewing events, goals and writing down insights while the second half of the day goes into setting goals for the upcoming year.
 
