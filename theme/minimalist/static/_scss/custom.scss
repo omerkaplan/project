@@ -27,6 +27,16 @@ pre {
   line-height: 2em;
 }
 
+#article-content img {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  padding-top: 2em;
+  padding-bottom: 2em;
+  display: block;
+  margin: 0 auto;
+}
+
 blockquote {
 	padding-left: 3em;
 	border-left: 1px solid;
@@ -40,3 +50,17 @@ blockquote {
   background-color: #efefef;
   color: #00000070;
 }
+
+sup a {
+  background-color: #e3e3e3;
+  border-radius: 30%;
+  padding: 0.1em 0.6em 0.1em;
+  margin-left: 0.3em;
+  margin-right: 0.2em;
+
+  &:hover {
+    text-decoration: none;
+    background-color: #00000070;
+  }
+}
+
