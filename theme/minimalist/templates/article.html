@@ -24,7 +24,7 @@
     <p>related posts:</p>
     <ul class="pb-5 pl-0 list-unstyled">
     {% for related_post in article.related_posts %}
-        <li class="pt-3"><a class="text-muted" href="{{ SITEURL }}/{{ related_post.url }}">{{ related_post.title }}</a></li>
+        <li class="pt-3"><a class="text-muted" href="{{ SITEURL }}/{{ related_post.url }}" onclick="ga('send', 'event', 'Article', 'Related Post', '{{related_post.title}}');">{{ related_post.title }}</a></li>
     {% endfor %}
     </ul>
   </div>
