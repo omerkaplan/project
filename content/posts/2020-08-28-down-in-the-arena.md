@@ -2,7 +2,7 @@ Title: when you're down in the arena, don't get right up
 Date:   2020-08-28 09:35:00 -0400
 Category: blog
 Summary: living a life in the arena means getting curious about the floor
-Tags: Leadership, Social, Mental
+Tags: leadership, social, mental, improvement
 
 
 One of my favorite all-time quotes belongs to Theodore Roosevelt in his immortal speech "Citizenship in a Republic"[^1] commonly known as "the man in the arena". It's so good I'm going to put my favorite part up here - 

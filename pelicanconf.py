@@ -21,7 +21,7 @@ LOCALE = 'en_US'
 
 THEME = './theme/minimalist/'
 
-PLUGINS = ['neighbors','readtime','open_graph','related_posts']
+PLUGINS = ['neighbors','readtime','related_posts']
 
 DEFAULT_ORPHANS = 0
 
@@ -64,3 +64,6 @@ EXTRA_PATH_METADATA = {
     'static/favicon/favicon.ico': {'path': 'favicon.ico'},
     'extra/CNAME': {'path': 'CNAME'},
     }
+# related posts plugin
+
+RELATED_POSTS_MAX = 3 #I tried 5 but its messed up on some resolutions
