@@ -2,7 +2,7 @@ Title:  Out of office as an opportunity for team outreach
 Date:   2019-03-31 10:00:00 -0400
 Category: blog
 Summary: I used the most corporate feature in the world to build better relationships
-Tags: Self, Work
+Tags: work, self branding
 
 
 The family and I went on  vacation last week and just before we left I had to go through the corporate exercise of setting an automatic "Out of office" message. Now, I could go for the obvious yet effective

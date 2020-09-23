@@ -2,7 +2,7 @@ Title:  Power of the ooVoo habit
 Summary: Both a book review and a perspective on ooVoo recent events
 Date:   2017-11-25 10:00:00 -0400
 Category: blog
-Tags: ooVoo
+Tags: oovoo, work
 
 Interestingly enough, this post was supposed to be a mash up of book reviews I finished reading recently about habit forming, among them are [Power of habit](https://www.amazon.com/Power-Habit-What-Life-Business-ebook/dp/B0055PGUYU), [Hooked](https://www.amazon.com/Hooked-How-Build-Habit-Forming-Products-ebook/dp/B00LMGLXTS/ref=sr_1_1?s=digital-text&ie=UTF8&qid=1512145439&sr=1-1&keywords=hooked) and early impressions of [Contagious](https://www.amazon.com/Contagious-Things-Catch-Jonah-Berger-ebook/dp/B008J4GQKW/ref=pd_sim_351_3?_encoding=UTF8&psc=1&refRID=7FFJR246A50J5NJZDTZR) (I'm all about the habit train recently) and it just so happens that life threw an actual use case my way to make that analysis all that better.
 

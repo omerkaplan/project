@@ -3,6 +3,8 @@ Date:   2019-12-29 21:30:00 -0400
 Category: project
 Summary:  notes from making the migration from Jekyll to Pelican. Updating as I go
 Projecttype: Python
+Tags: project
+
 
 Boy oh boy I'm exhausted. I just spent the last 9 hours migrating this blog from the pretty awesome, Ruby based [Jekyll](https://jekyllrb.com/) to the comforting arms of the Python based [Pelican](https://blog.getpelican.com/). In hindsight all of this could have possibly been avoided if only[ Ruby didn't start throwing errors](https://muffinman.io/macos-catalina-ruby-bad-interpreter-error/) at me after upgrading to macOS Catalina, but here we are.
 

@@ -1,7 +1,7 @@
 Title:  1-Star reviews: Don't get tilted, take action
 Date:   2017-07-14 10:57:02 -0400
 Category: blog
-Tags: Product Management, ooVoo, Mental
+Tags: product management, mental health, oovoo
 
 Over the last couple of years Apple and Google has gone down a trend of empowering users in their application stores by giving app reviews a prime real-estate when searching for an app, as well as giving peer reviews more weight (mostly by Google).
 

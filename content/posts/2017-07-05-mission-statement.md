@@ -1,7 +1,7 @@
 Title:  Mission Statement (1.0)
 Date:   2017-07-04 14:57:02 -0400
 Category: blog
-Tags: Self
+Tags: self improvement, mission statement
 
 /project began as a summer coding project, one I’ve been doing every year to brush up on new technologies, mess around with code and generally experience that amazing feeling of building something from scratch *(I also get to do things in terminal which makes me feel like a hacker so there’s that).*
 

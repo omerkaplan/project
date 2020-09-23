@@ -21,7 +21,6 @@ pre {
 
 #article-content img {
   width: 100%;
-  max-width: 400px;
   height: auto;
   padding-top: 2em;
   padding-bottom: 2em;
@@ -49,5 +48,19 @@ sup a {
   sup a:hover {
     text-decoration: none;
     background-color: #00000070; }
+
+table {
+  margin-top: 2em;
+  margin-bottom: 2em; }
+  table th {
+    background-color: #666;
+    color: white; }
+  table tr:nth-of-type(odd) {
+    background-color: #eee; }
+  table td, table th {
+    text-align: left;
+    vertical-align: top;
+    padding: 10px;
+    font-size: 1.1em; }
 
 /*# sourceMappingURL=custom.css.map */

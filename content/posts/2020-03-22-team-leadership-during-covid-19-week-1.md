@@ -2,7 +2,7 @@ Title: leading a team through ambiguous times: COVID-19 week 1 learnings
 Date:   2020-03-22 12:35:00 -0400
 Category: blog
 Summary: the covid-19 crisis is very different from anything I've seen but has some sense of familiarity. Right now my team's mental health is my number one priority
-Tags: COVID-19, Self, Leadership, Social 
+Tags: COVID-19, leadership, social skills
 
 
 My team and I were ready for the coronavirus crisis, or so we thought.

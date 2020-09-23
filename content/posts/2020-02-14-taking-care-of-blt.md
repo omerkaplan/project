@@ -2,7 +2,7 @@ Title: Keeping a strong mental by taking care of BLT
 Date:   2020-02-14 11:22:00 -0400
 Category: blog
 Summary: working on my bored, lonely, tired to keep my mental strong
-Tags: Self, Mental
+Tags: mental health, self improvement
 
 Last year I started a process of, what I called at the time, [reclaiming energy]({filename}2019-01-16-reclaiming-energy.md). <br>The process involved evaluating my relationship with different initiatives I was engaged in and weighing them against my yearly goals and values. Looking back on the process I'm happy to report it worked - big time: I was able to keep my project list to a handful of things I am excited about and able to give each one the attention it deserves. 
 

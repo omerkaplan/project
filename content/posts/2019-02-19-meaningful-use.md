@@ -2,7 +2,7 @@ Title:  Meaningful Use
 Summary: Keeping products in line with the original intent
 Date:   2019-02-19 10:00:00 -0400
 Category: blog
-Tags: Self
+Tags: self improvement, time management
 
 When I joined Facebook<sup>*</sup>, somewhere in 2009 it was with a lot of good intentions in mind: Keeping in touch with my friends while enjoying a feature rich environment we didn’t have back in the day. It was an age where we pretty much jumped on any social media platform that would come up, grab our vanity username and enjoy the novelty.
 

@@ -4,7 +4,7 @@ Category: blog
 Summary: on daily schedule optimization using my personal chronotype. I'm also a bird
 Image: "lark.jpg"
 Image-credit: "Ján Svetlík"
-Tags: Self, Work, Time, Email
+Tags: work, time management, email management
 
 I always knew I was a morning person. In fact, one of my favorite quotes is that my optimal work day is one that starts at 4AM and ends at 2PM. Other than scheduling my workouts in the morning I didn’t think much of it until I read “[When: The Scientific Secrets of Perfect Timing](https://www.amazon.com/When-Scientific-Secrets-Perfect-Timing/dp/0735210624)” by Daniel Pink which had an interesting impact on the way I optimize my morning time.
 

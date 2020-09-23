@@ -29,7 +29,6 @@ pre {
 
 #article-content img {
   width: 100%;
-  max-width: 400px;
   height: auto;
   padding-top: 2em;
   padding-bottom: 2em;
@@ -64,3 +63,24 @@ sup a {
   }
 }
 
+table {
+
+    margin-top: 2em;
+    margin-bottom: 2em;
+
+  th {
+    background-color: #666;
+    color: white;
+  }
+
+  tr:nth-of-type(odd) {
+    background-color: #eee;
+  }
+
+  td, th {
+    text-align: left;
+    vertical-align: top;
+    padding: 10px;
+    font-size: 1.1em;
+  }
+}

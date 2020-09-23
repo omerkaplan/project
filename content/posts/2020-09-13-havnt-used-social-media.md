@@ -2,7 +2,7 @@ Title: I haven't logged into social media in a very (very) long time and it's to
 Date:   2020-09-13 10:35:00 -0400
 Category: blog
 Summary: a snapshot of what life without using social media look like 
-Tags: improvement, social media, minimalism, digital minimalism 
+Tags: digital minimalism, self improvement, social media, minimalism  
 social_image: https://slashproject.s3.amazonaws.com/img/post/2020-09-social-media/sm-image.jpg
 
 This isn't going to be one of those "I haven't used Twitter or Facebook for over two years and managed to learn 4 new languages, launched 2 companies, became a Zen master and tending my own vegetable garden" blog posts. That being said, I have been out of the mainstream social media  social media ecosystem for a while now, life is pretty good and so I wanted to share some of my learnings those of you who are either interested, curious or asking me about it. 

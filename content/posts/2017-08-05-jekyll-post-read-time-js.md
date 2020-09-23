@@ -3,6 +3,7 @@ Date:   2017-08-18 07:00:00 -0400
 Category: project
 projecttype: Jekyll
 Summary: Calculating read times in Jekyll and linking with Google Analytics
+Tags: project
 
 Lately I’ve been learning some Javascript and thought it’ll be really nice to get out of the course’s projects and mess around with some real-life implementation (that’s not to say that being the 100,00th programmer that writes a rock-paper-scissors game in Javascript isn’t important 😅).
 

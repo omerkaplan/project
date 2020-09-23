@@ -2,7 +2,7 @@ Title: goals vs. systems and finding your Ikigai
 Date:   2020-09-01 09:35:00 -0400
 Category: blog
 Summary: finding your calling in a world that focuses on goals
-Tags: Leadership, Social, Mental, Self, Book Review
+Tags: leadership, mental health, social, self improvement, book Review
 
 I recently finished reading _Ikigai: The Japanese Secret to a Long and Happy Life_. [^1]It was a short and informational read about how the inhabitants of Okinawa, Japan perceive longevity while  living in a place that has the highest life expectancy in the world (also known as a "blue zone"[^2]).
 

@@ -2,7 +2,7 @@ Title:  Why do you bring a notebook to meetings?
 Summary: People ask me this question on a monthly basis, might as well blurb about it
 Date:   2019-03-25 10:00:00 -0400
 Category: blog
-Tags: Self, Work, Mental
+Tags: work, mental health
 
 Every month or so, usually when I'm in a meeting with a new team or even with a group of people I've been meeting regularly, there's this one person that will ask me something along the lines of *"you are such a digital person doing digital person things, why do you bring a notebook to meetings instead of a laptop?"*
 

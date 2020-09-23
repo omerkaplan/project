@@ -2,7 +2,7 @@ Title:  Reflections on gaming
 Summary: Uninstalled my favorite game after 1,500 hours of gameplay
 Date:   2019-01-30 10:00:00 -0400
 Category: blog
-Tags: Gaming, Self
+Tags: gaming, time management
 
 After 4.5 years, 1,500 hours of gameplay and probably couple of hundreds of dollars in investment I uninstalled [Heores of the Storm](https://heroesofthestorm.com/en-us/).  The game I thought I'll play until Blizzard turns of its servers and invested hours in mix-maxing - uninstalled. And it feels good, really good.
 

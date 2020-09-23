@@ -4,7 +4,7 @@ Category: blog
 Summary: I'm happy I was able to get some insight out of a random article on the internet
 Image: mountain.jpg
 Image-credit: Kalle Kortelainen
-Tags: Self
+Tags: self improvement, retrospective
 
 I don't usually read random articles on new sites but this morning a BBC article on the [overcrowded lines at the peak of mount Everest](https://www.bbc.com/news/world-asia-48401491) caught my eye, mainly over the surreal view of mountaineers waiting in an hour and a half line.
 

@@ -1,7 +1,7 @@
 Title:  "Why I do what I do, a reply to @lisettevoytko"
 Date:   2017-08-01 10:59:00 -0400
 Category: blog
-Tags: Self, Mission
+Tags: self improvement, mission statement
 
 I was reading Lisette’s latest post on Medium _(link at the end of the post since that's a bug for some reason)_ and started writing a reply when I suddenly realized I've been typing for 20 minutes. So instead pouring 800 words into Medium's comments here's my structured, articled yet definitely not as beautifully written. Lisette is the master of adjectives and colorful descriptions, go read her stuff.
 

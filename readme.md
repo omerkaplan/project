@@ -12,3 +12,7 @@
 $ pelican content -o output -s pelicanconf.py
 $ ghp-import output -b gh-pages
 $ git push origin gh-pages
+
+## other stuff
+
+* every post needs to have at least 2 tags (for newsletter prompt)
