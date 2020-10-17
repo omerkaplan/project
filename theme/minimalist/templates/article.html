@@ -15,14 +15,21 @@
   {{ article.content }}
   </div>
   <hr class="mt-5">
-  <div id="related-posts-list" class="mt-3 p-3 mb-5">
-    {% include "includes/newsletter_widget.html" %}
-  </div>
+
+  {# product management promotion if the post has the product management tag #}
+  {% if "product management" in article.tags %}
+    {% include "includes/widget_product_talk.html" %}
+  {% endif %}
+  
  </div>
 
- <div class="col-xl-2 col-lg-3 mt-md-5 mt-lg-3 ml-lg-5" id="related_posts_col"> {# sidebar #}
+ {# sidebar div #}
+
+ <div class="col-xl-2 col-lg-3 mt-md-5 mt-lg-3 ml-lg-5" id="related_posts_col"> 
   {% if article.related_posts %}
-   <div  class="pr-3 sticky-top">
+   <div class="sticky-top">
+
+    {# related posts #}
     <div id="related-posts-list" class="pr-3">
     <div class="pt-3 pl-3 pr-lg-1">
     <p>related posts:</p>
@@ -33,12 +40,14 @@
     </ul>
   </div>
    </div>
-  {% endif %}
-  <div id="related-posts-list" class="mt-3 pr3 mb-5"> {# newsletter div #}
-    <div class="pt-3 pl-3 pr-lg-1 pr-3 pb-3">
-    {% include "includes/newsletter_widget.html" %}
-  </div>
-  </div> {# end newsletter div #}
+  {% endif %} {# end related posts #}
+
+    <div id="related-posts-list" class="mt-3 pr3 mb-5"> {# newsletter div #}
+      <div class="pt-3 pl-3 pr-lg-1 pr-3 pb-3">
+        {% include "includes/newsletter_widget.html" %}
+      </div>
+    </div> {# end newsletter div #}
+
  </div>
 </div> {# end sidebar #}
 
