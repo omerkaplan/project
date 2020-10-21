@@ -1,6 +1,6 @@
-Status: draft
+Status: published
 Title:  Non-functional requirements are my favorite and I will make them yours too
-Date:   2020-10-7 10:30:00 -0400
+Date:   2020-10-21 10:30:00 -0400
 Category: blog
 Summary: what are NFRs and how you start thinking about them  
 Tags: product management, requirements, NFRs
