@@ -1,6 +1,6 @@
-Status: draft
+Status: published
 Title:  what does it mean to be a 'master of product'?
-Date:   2020-10-17 10:30:00 -0400
+Date:   2020-11-18 10:30:00 -0400
 Category: blog
 Summary: how do evolve from being 'jacks of all trades' and empower cross-functional teams   
 Tags: product management, product leadership 
