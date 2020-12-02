@@ -20,8 +20,6 @@ My goal with having one-on-one meetings is getting to know new people with fresh
 | a person who would like to practice product interview questions and get feedback | **not right now**. I used to enjoy solving interview questions but it quickly clogged up my one-on-one meeting time. Read more about my product management solitaire method. |
 | a member of a sales team wanting to tell me about a product or a service that will be great for my current workplace | **no**. That's not a good avenue for sales, sorry.           |
 
-some text goes here and a link to the bottom (anchor)
-
 ## what would we talk about?
 
 I like to keep the meetings fluid and conversational. We have roughly and hour and I make sure my full attention is dedicated to the meeting so I like to let it flow! No preparation in advance is necessary, just show up! 
