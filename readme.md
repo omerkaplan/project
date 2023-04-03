@@ -7,12 +7,8 @@
 
 ## Deploying things
 
-*** dont checkout to ph-pages or all hell will break loose ***
+*** dont checkout to ph-pages or all bad things will happen ***
 
 $ pelican content -o output -s pelicanconf.py
 $ ghp-import output -b gh-pages
 $ git push origin gh-pages
-
-## other stuff
-
-* every post needs to have at least 2 tags (for newsletter prompt)
