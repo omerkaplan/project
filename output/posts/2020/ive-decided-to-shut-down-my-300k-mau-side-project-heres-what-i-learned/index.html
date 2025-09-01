@@ -1,31 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <title>I've decided to shut down my 300K MAU side project, here's what I learned | /project</title>
-  <meta name="description" content="Projects, blog posts and things by Omer Kaplan"/>
+  <meta name="description" content="Projects, blog posts and things by Omer Kaplan" />
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#157878">
 
 
 
-    <!-- css -->
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css?family=Lato:400,700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="/theme/css/custom.css">
-    <link rel="stylesheet" type="text/css" href="/theme/css/pygment.css">
+  <!-- css -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Lato:400,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="/theme/css/custom.css">
+  <link rel="stylesheet" href="/static/css/pygments.css">
 
 
-    <!--favicons-->
-    <link rel="shortcut icon" type="image/x-icon" href="/theme/favicon/favicon.ico">
 
-    <!-- bootstraping -->
-    <script
-      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-      integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs="
-      crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js" integrity="sha384-6khuMg9gaYr5AxOqhkVIODVIvm9ynTT5J4V1cfthmT+emCG6yVmEZsRHdxlotUnm" crossorigin="anonymous"></script>
-    <script src="https://kit.fontawesome.com/bfad879265.js" crossorigin="anonymous"></script>
+  <!--favicons-->
+  <link rel="shortcut icon" type="image/x-icon" href="/theme/favicon/favicon.ico">
+
+  <!-- bootstraping -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs=" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"
+    integrity="sha384-6khuMg9gaYr5AxOqhkVIODVIvm9ynTT5J4V1cfthmT+emCG6yVmEZsRHdxlotUnm"
+    crossorigin="anonymous"></script>
+  <script src="https://kit.fontawesome.com/bfad879265.js" crossorigin="anonymous"></script>
 
 
     <!-- Open Graph / Facebook -->
@@ -42,63 +45,83 @@
     <meta property="twitter:description" content="esports radar us shutting down today while growing, here are some lessons">
     <meta property="twitter:image" content="https://slashproject.s3.amazonaws.com/img/post/2020-11-esports-radar/esr-promo.png">
 
-    <!-- Including Google Analytics. This is done in head  since we need to calculate post reading time -->
+  <!-- Including Google Analytics. This is done in head  since we need to calculate post reading time
 
-        <script type="text/javascript">
-          (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-          (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-          })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  <script type="text/javascript">
+    (function (i, s, o, g, r, a, m) {
+      i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+        (i[r].q = i[r].q || []).push(arguments)
+      }, i[r].l = 1 * new Date(); a = s.createElement(o),
+        m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
 
-          ga('create', 'UA-101975344-1', 'auto');
-          ga('send', 'pageview');
-        </script>
+    ga('create', 'UA-101975344-1', 'auto');
+    ga('send', 'pageview');
+  </script>
 
-    </head>
+-->
+  <!-- Dark mode initial javascript  -->
+  <script>
+    // the goal of this script is to set the initial theme based on user preference or saved theme. At the end of the document we have a script that toggles the theme.
+    (function () {
+      const savedTheme = localStorage.getItem("theme"); // Get saved theme from localStorage
+      const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+      const theme = savedTheme || (prefersDark ? "dark" : "light");
+      document.documentElement.setAttribute("data-theme", theme); // Set the initial theme to dark mode if saved or preferred
+    })();
+  </script>
+  <!-- end of themeing javascript --></head>
+
 <body>
- <div class="container-fluid">
-   <div class="row">
-     <div class="col p-0">
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col p-0">
+<nav class="navbar navbar-expand-lg">
   <a class="navbar-brand" href="/">/project</a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav"
+    aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
   <div class="collapse navbar-collapse" id="navbarNav">
 
- <ul class="navbar-nav mr-auto">
+    <ul class="navbar-nav mr-auto">
 
-  <li class="nav-item"><a class="nav-link" href="/">/all</a></li>
+      <li class="nav-item"><a class="nav-link nav-all" href="/">/all</a></li>
 
-<li class="nav-item active">    <a class="nav-link" href="/category/blog"><span class="">/blog_posts</span></a>
-  </li>
+<li class="nav-item active accent-blue">        <a class="nav-link nav-blog" href="/category/blog"><span class="">/blog_posts</span></a>
+      </li>
 
-<li class="nav-item">    <a class="nav-link" href="/category/project">/projects</a>
-  </li>
+      <li class="nav-item">        <a class="nav-link nav-projects" href="/category/project">/projects</a>
+      </li>
 
-  <li class="nav-item">
-    <a class="nav-link" href="/about">/about-me</a>
-  </li>
+      <li class="nav-item">
+        <a class="nav-link nav-about" href="/about">/about-me</a>
+      </li>
 
-  <li class="nav-item">
-    <a class="nav-link" href="/feeds/all.atom.xml">/rss</a>
-  </li>
+      <li class="nav-item">
+        <a class="nav-link nav-rss" href="/feeds/all.atom.xml">/rss</a>
+      </li>
 
-</ul>
-<span class="navbar-text mr-5">made with<i class="fas fa-mug-hot mr-2 ml-2"></i>by <u><a class="text-muted" href="https://www.linkedin.com/in/omerkaplan/">Omer Kaplan</a></u></span>
+      <li class="nav-item">
+        <a class="nav-link href nav-all=" #" id="theme-toggle">/theme/dark</a>
+      </li>
+    </ul>
+
+    <span class="navbar-text accent-green mr-5">made with<i class="fas fa-mug-hot mr-2 ml-2 accent-orange"></i>by <u><a
+          class="accent-green" href="https://www.linkedin.com/in/omerkaplan/">Omer Kaplan</a></u></span>
   </div>
-</nav>    </div>
-   </div>
-   <div class="row mt-3">
+</nav>      </div>
+    </div>
+    <div class="row mt-3">
 <div class="col-lg-12 col-md-12">
-<div class="row" id="content_row">
- <div class="col-xl-2 col-lg-1 col-md-12"></div>
- <div class="col-xl-5 col-lg-7 col-md-12">
-  <h1 class="mt-3">I've decided to shut down my 300K MAU side project, here's what I learned</h1>
-  <small class="mr-2"><i class="far fa-calendar-alt mr-2"></i>04 November, 2020</small>
-  <small class="mr-2"><i class="far fa-clock mr-2"></i>6 minutes read</small>
-  <div class="pt-5" id="article-content">
-  <p>Last week I had the pleasure of writing my first 'website is shutting down' email to few hundreds that subscribed to receive daily updates from esports Radar: A service that provided curated, real-time esports headlines on a large variety of platforms. </p>
+  <div class="row" id="content_row">
+    <div id="margin-from-left" class="col-xl-2 col-lg-1 col-md-12"></div>
+    <div id="content" class="col-xl-7 col-lg-9 col-md-12">
+      <h1 class="mt-3">I've decided to shut down my 300K MAU side project, here's what I learned</h1>
+      <small class="mr-2"><i class="far fa-calendar-alt mr-2"></i>04 November, 2020</small>
+      <small class="mr-2"><i class="far fa-clock mr-2"></i>6 minutes read</small>
+      <div class="pt-5" id="article-content">
+        <p>Last week I had the pleasure of writing my first 'website is shutting down' email to few hundreds that subscribed to receive daily updates from esports Radar: A service that provided curated, real-time esports headlines on a large variety of platforms. </p>
 <p>When sunsetting side-hustles, I found that the positive things (experiences, pieces of code, sometimes customers) are often embedded in the next project while the learnings about that didn't work tend to fade away. The purpose of this post is to dive into my learnings from what didn't work along and why I ended up shutting down a seemingly successful website so I can keep those lessons in mind as well. </p>
 <p>The problem I was solving for using esports radar was very real: The world of esports news is highly fragmented between different sites with very little syndication or quality control. As a player of a specific game that's interested in its esports scene it's a lot of cognitive work for me to get out to the different news sites and filter by my favorite game, so I'll probably get my content on Reddit or stick to a single news source. What esports radar did behind the scenes is scraping the vast majority of esports news websites out there, analyze the articles, categorize them and using a set of 12 signals, compare them to other articles discussing the same topic so the output is a digest of all the esports news for the most popular games using the best source available. </p>
 <p><img alt="esports radar on launch" src="https://slashproject.s3.amazonaws.com/img/post/2020-11-esports-radar/esr-promo.png"></p>
@@ -121,13 +144,14 @@
 <p>Shutting down a project is hard, especially when the data shows 'growth' (which we already established there is a difference between growth and good growth). From my vantage point the hardship comes not from the act of shutting down itself, but more from the loss of routine: One less project to check up on, one less roadmap to manage, few less emails per week from users asking features - they will definitely be missed.</p>
 <p>But ultimately, that blessing is also the reason why closing esports Radar is necessary: I need to make cognitive space for newer projects that will be built on the lessons, thought process and potentially bit and pieces of code from the one that just got shut down. </p>
 <p>So in a sense, some part of esports radar will continue to live in a future project, and that's kind of nice. </p>
-  </div>
-  <hr class="mt-5">
- </div>
+      </div>
+      <hr class="mt-5">
+    </div>
 
 
- <div class="col-xl-2 col-lg-3 mt-md-5 mt-lg-3 ml-lg-5" id="related_posts_col"> 
-   <div class="sticky-top">
+    <div class="col-xl-2 col-lg-1" id="related_posts_col">
+      <!--
+      <div class="sticky-top">
 
     <div id="related-posts-list" class="pr-3">
     <div class="pt-3 pl-3 pr-lg-1">
@@ -138,14 +162,19 @@
         <li class="pt-3"><a class="text-muted" href="/posts/2020/what-does-it-mean-to-be-a-master-of-product/" onclick="ga('send', 'event', 'Article', 'Related Post', 'what does it mean to be a 'master of product'?');">what does it mean to be a 'master of product'?</a></li>
     </ul>
   </div>
-   </div>
+
+    </div>
  
- </div>
-</div> 
-      </div>
-   </div>
-   <div class="row mt-5">
-   </div>
- </div>
-</body>
+  </div>
+   -->
+    </div> 
+    </div>
+  </div>
+  <div class="row mt-5">
+  </div>
+  </div>
+
+<!-- Dark mode toggle javascript -->
+<script src="/static/js/theme.js"></script></body>
+
 </html>

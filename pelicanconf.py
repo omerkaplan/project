@@ -58,7 +58,11 @@ SOCIAL = (('You can add links in your config file', '#'),
 FORMATTED_FIELDS = ['']
 
 # Static paths tells Pelican to copy those assets to the output directory
-STATIC_PATHS = ['extra/CNAME']
+# This section copies these static assets into /output. Notice the static directory that's generated is in /content and not in /theme
+STATIC_PATHS = [
+    'extra/CNAME',
+    'static',
+    ]
 
 EXTRA_PATH_METADATA = {
     'static/favicon/favicon.ico': {'path': 'favicon.ico'},
@@ -67,3 +71,18 @@ EXTRA_PATH_METADATA = {
 # related posts plugin
 
 RELATED_POSTS_MAX = 3 #I tried 5 but its messed up on some resolutions
+
+MARKDOWN = {
+    'extension_configs': {
+        'markdown.extensions.codehilite': {
+            'css_class': 'highlight',
+            'guess_lang': False,
+            'linenums': False,
+        },
+        'markdown.extensions.extra': {},
+    },
+    'output_format': 'html5',
+}
+
+PYGMENTS_STYLE = "material"
+
