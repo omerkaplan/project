@@ -1,8 +1,18 @@
-_site
-.sass-cache
-.jekyll-metadata
-/bin
-/lib
-.Python
+# Pelican
+output/
+cache/
+*.pyc
+__pycache__/
 __pycache__
+.Python
+
+
+# Virtualenvs
+.venv/
+venv/
+env/
+
+# OS/editor
 .DS_Store
+.idea/
+.vscode/
