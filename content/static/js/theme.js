@@ -1,34 +1,28 @@
 /**
  * theme.js
  *
- * Handles dark/light theme switching:
- * - Applies saved theme from localStorage (or system default on first visit)
- * - Updates <html data-theme="">
- * - Handles UI label for the theme toggle link
+ * Handles scroll-based badge visibility on homepage and article pages
  */
 
 document.addEventListener("DOMContentLoaded", function () {
-    const root = document.documentElement;
-    const toggle = document.getElementById("theme-toggle");
+    // Hide badges on scroll for homepage and article pages
+    if (document.body.classList.contains("homepage") || document.body.classList.contains("article-page")) {
+        const coffeeBadge = document.querySelector(".homepage-coffee-badge, .article-coffee-badge");
+        const homeButton = document.querySelector(".article-home-button");
 
-    const applyTheme = (theme) => {
-        root.setAttribute("data-theme", theme);
-        localStorage.setItem("theme", theme);
-        if (toggle) {
-            toggle.textContent = theme === "dark" ? "/theme/dark" : "/theme/light";
-        }
-    };
+        window.addEventListener("scroll", () => {
+            const currentScroll = window.pageYOffset;
 
-    const current = root.getAttribute("data-theme") || "light";
-    applyTheme(current); // sets the label
-
-    if (toggle) {
-        toggle.addEventListener("click", (e) => {
-            e.preventDefault();
-            const isDark = root.getAttribute("data-theme") === "dark";
-            applyTheme(isDark ? "light" : "dark");
+            // Show badges only when at the top
+            if (currentScroll <= 50) {
+                coffeeBadge?.classList.remove("hidden");
+                homeButton?.classList.remove("hidden");
+            }
+            // Hide badges when scrolled down
+            else {
+                coffeeBadge?.classList.add("hidden");
+                homeButton?.classList.add("hidden");
+            }
         });
     }
 });
-
-

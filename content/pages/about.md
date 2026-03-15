@@ -1,20 +1,89 @@
-Title: It's me, hi
-Date:   2023-04-01 11:00:00 -0400
+Title: about
+Date: 2026-03-14
 Slug: about
 
+<raw><img src="https://slashproject.s3.amazonaws.com/img/omer.jpg" class="profile-photo" alt="Omer Kaplan" /></raw>
 
+I'm Omer Kaplan and this is my /about page.
 
-I'm **Omer Kaplan**, a long time product manager and learner, dedicating my time and talent to creating positive impact through empathy and mindful use of technology. Currently, I'm the head of product at [Sonara Health](http://sonarahealth.com), a startup company on a mission to equitably increasing access to life saving medication. Previously, I had the honor of spending time at [Dayton Children's Hospital](https://www.childrensdayton.org/) as the consumer digital engagement officer.
+Instead of going for a traditional about page format which often times ends like a mirror of a LinkedIn profile ([this](https://www.linkedin.com/in/omerkaplan/)) but less up-to-date, I opted for a format that's a bit more in depth. Have fun!
 
-Over the past few years, I'm focused improving the lives of vulnerable, sometime stigmatized populations in the Healthcare technology space. If you share a similar mindset and want to reach out, I encourage you to do so by clicking on the link below.
+---
 
-<raw><i class="fab fa-linkedin mr-2"></i></raw> [omer kaplan on linkedIn](https://www.linkedin.com/in/omerkaplan/) 
+### <raw><i class="fa-solid fa-asterisk"></i></i></raw> Sonara Health
 
-## about /project 
+I'm currently the CPO at [Sonara Health](http://sonarahealth.com) where we help people with opioid dependency get access to medication assisted treatment and achieve their goals. People with OUD are often stigmatized and overlooked due to complex patient journeys and multiple underlying conditions.  
 
-I spent the majority of my day writing stories, whether it's product related documents, roadmaps, technical stuff, investor decks, [synthesizing context](https://slashproject.co/posts/2020/what-does-it-mean-to-be-a-master-of-product/) and re-packaging it. This website combines my passion for writing and coding, my own corner in the world wide web.
+On the provider side, opioid treatment programs vary widely in how they approach methadone dosing, take-home eligibility, scheduling, and ongoing care decisions. That variation can have a significant impact on patient outcomes, including early dropout from treatment and repeated attempts to re-engage, sometimes up to 5 times, before a patient is able to stay in care for more than six months.
 
-Coding-wise, I enjoy jumping into new technologies and use them to solve my mundane issues: After being bothered with the fact that there are no syndication in esports news, I built esports Radar, [that got too big for its own good](https://slashproject.co/posts/2020/ive-decided-to-shut-down-my-300k-mau-side-project-heres-what-i-learned/), couldn't find people my age to play Animal Crossing with - built the [Animal Crossing pen-pan club](https://slashproject.co/posts/2020/project-story-the-animal-crossing-pen-pal-club/), drank from the Twitter data firehose analyzing data related to depression, programmed a [rogue-like text based adventure game](https://github.com/omerkaplan/lair-of-xorath), somehow I'm always building something. 
+At Sonara, we work with both patients and providers to make treatment more accessible, support better clinical workflows, and bring data-informed approach to care. I believe mindful use of technology, where care is humanized, can reduce harm and help more people stay on a path that works for them.
 
-<raw><i class="fab fa-github mr-2"></i></raw> [omerkaplan on github](https://github.com/omerkaplan)
+---
 
+### <raw><i class="fa-solid fa-head-side-brain"></i></raw> I'm passionate on solving really hard problems, especially in healthcare 
+
+Since 2006, I've done product work across a range of startups, from social networks to audio and video communications. Solving complex problems in those industries was fun and challenging, but it wasn't until 2018 that I found my calling in healthcare and will always be grateful for the people at [Dayton Children's Hospital](https://childrensdayton.org) who opened the door for me. 
+
+There's something about not only tackling problems on the technology and workflow side, but also building for populations that other companies might treat as edge cases or leave at the very end of the backlog.
+
+There is something incredibly meaningful and rewarding about keeping the distance between the problems I work on and the impact on people's lives small. I'm not an M.D, and multiple times in my product healthcare carrier I felt that problems my team and I solved made a significant, positive impact for people. 
+
+If you're a product person reading this and thinking about transitioning to healthcare, we always need more good people - feel free to reach out. 
+
+---
+
+### <i class="fa-solid fa-burger"></i></i> Culture eats strategy
+
+If I had a portable soapbox I can get on, this would be it. In every organization I've been a part of, whether it's a product trio, a seven-person startup where half of the hardware is at the founder's garage (oddly specific) or a 6,500 employee health system, no matter how good the strategy is - the organization is always as strong as  as its leadership alignment and culture.
+
+Culture as a concept can be vague, especially on the leadership level. To me, similarly to product-market fit, culture is more of a moment or a series of moments rather than a checkbox or a company document called "our five culture pillars". When you ask a person in the company, "what's our culture?", they'll tell you. The more consistent those answers are, the clearer the culture is. And when the answers are inconsistent, that tells you something too.
+
+---
+
+### <i class="fa-solid fa-gauge-min"></i> Minimalism
+
+_Nothing says "minimalism" more than a 10,000 words /about page, I know._
+
+Over the years I've gotten very good about being mindful about what I need vs. what I have. What I often found was that I have everything I need and having more than that felt like a burden.
+
+---
+
+### <raw><i class="fas fa-hashtag"></i></raw> I'm not on social media 
+
+I used to be, but not since 2014, if I remember correctly. I used to think that social media was the best way to shorten the distance between myself and thoughts leaders I appreciate, and getting exposure to new and interesting people. 
+
+While this was slightly true up to 2014-ish, social networks are now much better at generating noise than surfacing signal at best, or a distraction at worst. I've found much more value in deliberately curating the ideas, people, and communities I actually want to engage with.
+
+One day I may have a SoundCloud to plug in case one of the things I do go viral. 
+
+Since I'm not on Social media, check out my [Now page](/now) to see what I'm up to. 
+
+---
+
+### <raw><i class="fas fa-chess"></i></raw> Chess is hard, but awesome
+
+I picked up Chess in 2024 when I was looking for a "fun a relaxing activity to do after work". Two years after I can confidently say that there's in nothing relaxing about Chess, but it's incredibly fun and thought provoking. 
+
+I love a lot of things about Chess but two things stand out the most: The never ending learning process, and its rich history where moves we make and strategies we come up with are a result of generations of great chess players  that came before us. 
+
+I'm now rated ~1400 in [Chess.com](https://www.chess.com/member/timetwister_gg), feel free to add me! 
+
+---
+
+### Other things about me
+
+| #    | Thing about me                                               |
+| ---- | ------------------------------------------------------------ |
+| 1    | I love things organized in tables                            |
+| 2    | I use [Obsidian](https://obsidian.md/) to automate and document many aspects of my life |
+| 3    | Bulleted list item should be organized in odd-numbers        |
+
+---
+
+### Contact
+
+<i class="fa-brands fa-square-linkedin"></i> [Omer Kaplan on LinkedIn](https://www.linkedin.com/in/omerkaplan/)
+
+---
+
+[← back home](/)

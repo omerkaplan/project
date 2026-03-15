@@ -8,24 +8,14 @@
 
     <ul class="navbar-nav mr-auto">
 
-      <li class="nav-item"><a class="nav-link nav-all" href="/">/all</a></li>
+      <li class="nav-item"><a class="nav-link nav-all" href="/">/home</a></li>
 
-      {% if category == 'blog'%}<li class="nav-item active accent-blue">{% else %}
-      <li class="nav-item">{% endif %}
-        <a class="nav-link nav-blog" href="/category/blog"><span class="">/blog_posts</span></a>
-      </li>
-
-      {% if category == 'project'%}<li class="nav-item active">{% else %}
-      <li class="nav-item">{% endif %}
-        <a class="nav-link nav-projects" href="/category/project">/projects</a>
+      <li class="nav-item">
+        <a class="nav-link nav-blog" href="/pages/about">/about</a>
       </li>
 
       <li class="nav-item">
-        <a class="nav-link nav-about" href="/about">/about-me</a>
-      </li>
-
-      <li class="nav-item">
-        <a class="nav-link nav-rss" href="/feeds/all.atom.xml">/rss</a>
+        <a class="nav-link nav-projects" href="/pages/now">/now</a>
       </li>
 
       <li class="nav-item">

@@ -1,27 +1,8 @@
 /* Variables + dark mode theme */
+/* Dark mode as default (inspired by One Dark Pro Darker) */
 :root {
-  --bg-color: #ffffff;
-  --text-color: #000000;
-  --link-color: #0066cc;
-  --border-color: #dddddd;
-  --highlight-color: #f4f4f4;
-  --navbar-bg-color: #f4f4f4;
-  --post-type-project: #c49153;
-  --accent-blue: #005cc5;
-  --accent-green: #22863a;
-  --accent-red: #d73a49;
-  --accent-orange: #e36209;
-  --accent-yellow: #d4a72c;
-  --accent-purple: #6f42c1;
-}
-
-/*
-Dark mode variables (inspired by One Dark Pro Darker)
-These values override :root variables when [data-theme='dark'] is present
-*/
-[data-theme=dark] {
   --bg-color: #1e2127;
-  --text-color: #abb2bf;
+  --text-color: #c8cdd6;
   --link-color: #61afef;
   --border-color: #444444;
   --highlight-color: #1e1e1e;
@@ -101,6 +82,7 @@ These values override :root variables when [data-theme='dark'] is present
 body {
   background-color: var(--bg-color);
   color: var(--text-color);
+  font-family: "IBM Plex Sans", sans-serif;
 }
 
 body,
@@ -118,11 +100,14 @@ a {
 }
 
 p {
-  font-size: 1.1em;
+  font-size: 1.4rem;
 }
 
 h1 {
-  font-weight: bold;
+  font-weight: 700;
+  font-size: clamp(3rem, 10vw, 5rem);
+  line-height: 1.2;
+  margin-bottom: 2.5rem;
 }
 
 h2 {
@@ -220,10 +205,22 @@ pre {
 
 /* article */
 #article-content {
-  line-height: 2em;
+  line-height: 1.7;
+  font-size: 1.4rem;
+  max-width: 680px;
+}
+#article-content h3 {
+  margin-top: 2.5rem;
+  margin-bottom: 1.8rem;
+  color: var(--heading-color);
+}
+#article-content h4 {
+  margin-top: 1.8rem;
+  margin-bottom: 0.8rem;
+  color: var(--accent-green);
 }
 
-#article-content img {
+#article-content img:not(.profile-photo) {
   width: 100%;
   height: auto;
   padding-top: 2em;
@@ -266,20 +263,363 @@ sup a:hover {
 table {
   margin-top: 2em;
   margin-bottom: 2em;
+  width: 100%;
+  border-collapse: collapse;
 }
 table th {
-  background-color: #666;
-  color: white;
+  background-color: var(--code-bg);
+  color: var(--heading-color);
+  border-bottom: 1px solid var(--border-color);
 }
-table tr:nth-of-type(odd) {
-  background-color: #eee;
+table tr:nth-of-type(even) {
+  background-color: var(--highlight-color);
 }
 table td,
 table th {
   text-align: left;
   vertical-align: top;
   padding: 10px;
-  font-size: 1.1em;
+  font-size: 0.9em;
+  border-bottom: 1px solid var(--border-color);
+  color: var(--text-color);
+}
+
+/* Profile photo float */
+.profile-photo {
+  float: right;
+  width: 180px;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin: 0 0 1.5rem 2.5rem;
+}
+
+/* About section on homepage */
+.about-section {
+  max-width: 680px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.about-section h1 {
+  margin-top: 5rem;
+}
+.about-section h2 {
+  font-weight: 700;
+  font-size: clamp(3rem, 10vw, 5rem);
+  line-height: 1.2;
+}
+.about-section h3 {
+  margin-top: 2.5rem;
+  margin-bottom: 1.8rem;
+  color: var(--heading-color);
+}
+.about-section p {
+  font-size: 1.4rem;
+  line-height: 1.7;
+  margin-bottom: 1.2rem;
+}
+.about-section a {
+  color: var(--link-color);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+.about-section a:hover {
+  color: var(--accent-purple);
+}
+.about-section i {
+  color: var(--text-color);
+  opacity: 0.7;
+}
+
+/* Recent posts section */
+.recent-posts-section {
+  margin-top: 1rem;
+}
+.recent-posts-section h2 {
+  margin-top: 1rem;
+}
+.recent-posts-section h5 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+.recent-posts-section #article-summary {
+  font-size: 1.4rem;
+  line-height: 1.7;
+}
+
+/* Horizontal divider styling */
+hr {
+  border: 0;
+  border-top: 1px solid var(--border-color);
+  opacity: 0.3;
+}
+
+/* Homepage and article page styles - hide navbar */
+body.homepage .navbar,
+body.article-page .navbar {
+  display: none;
+}
+
+.homepage-theme-toggle {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  font-size: 0.85rem;
+  color: var(--accent-purple);
+  z-index: 1000;
+  cursor: pointer;
+  padding: 0.5rem 0.75rem;
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 6px;
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 0.3s ease, transform 0.3s ease, color 0.2s ease;
+}
+.homepage-theme-toggle:hover {
+  color: var(--accent-blue);
+}
+.homepage-theme-toggle i {
+  margin-right: 0.3rem;
+}
+.homepage-theme-toggle.hidden {
+  opacity: 0;
+  transform: translateY(-10px);
+  pointer-events: none;
+}
+
+.homepage-coffee-badge {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  font-size: 0.85rem;
+  color: var(--accent-green);
+  z-index: 1000;
+  padding: 0.5rem 0.75rem;
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 6px;
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+.homepage-coffee-badge a {
+  color: var(--accent-green);
+  text-decoration: underline;
+  margin-left: 0.25rem;
+}
+.homepage-coffee-badge a:hover {
+  color: var(--accent-orange);
+}
+.homepage-coffee-badge.hidden {
+  opacity: 0;
+  transform: translateY(-10px);
+  pointer-events: none;
+}
+
+/* Article page badges - same styling as homepage */
+.article-theme-toggle {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  font-size: 0.85rem;
+  color: var(--accent-purple);
+  z-index: 1000;
+  cursor: pointer;
+  padding: 0.5rem 0.75rem;
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 6px;
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 0.3s ease, transform 0.3s ease, color 0.2s ease;
+}
+.article-theme-toggle:hover {
+  color: var(--accent-blue);
+}
+.article-theme-toggle i {
+  margin-right: 0.3rem;
+}
+.article-theme-toggle.hidden {
+  opacity: 0;
+  transform: translateY(-10px);
+  pointer-events: none;
+}
+
+.article-coffee-badge {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  font-size: 0.85rem;
+  color: var(--accent-green);
+  z-index: 1000;
+  padding: 0.5rem 0.75rem;
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 6px;
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+.article-coffee-badge a {
+  color: var(--accent-green);
+  text-decoration: underline;
+}
+.article-coffee-badge a:hover {
+  color: var(--accent-orange);
+}
+.article-coffee-badge.hidden {
+  opacity: 0;
+  transform: translateY(-10px);
+  pointer-events: none;
+}
+
+/* Dark mode adjustments for fixed badges */
+[data-theme=dark] .homepage-theme-toggle,
+[data-theme=dark] .homepage-coffee-badge,
+[data-theme=dark] .article-theme-toggle,
+[data-theme=dark] .article-coffee-badge {
+  background: rgba(30, 33, 39, 0.8);
+}
+
+/* Home button for article pages */
+.article-home-button {
+  position: fixed;
+  top: 70px; /* Position below the top badges on mobile */
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 0.85rem;
+  z-index: 1000;
+  padding: 0.5rem 0.75rem;
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 6px;
+  opacity: 1;
+  transform: translateX(-50%) translateY(0);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  /* On larger screens, move it to the top center */
+}
+.article-home-button a {
+  color: var(--accent-green);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+.article-home-button a:hover {
+  color: var(--accent-purple);
+}
+.article-home-button a i {
+  margin-right: 0.3rem;
+}
+.article-home-button.hidden {
+  opacity: 0;
+  transform: translateX(-50%) translateY(-10px);
+  pointer-events: none;
+}
+@media (min-width: 768px) {
+  .article-home-button {
+    top: 20px;
+  }
+}
+
+/* Dark mode adjustment for home button */
+[data-theme=dark] .article-home-button {
+  background: rgba(30, 33, 39, 0.8);
+}
+
+/* Mobile menu for article pages */
+.article-mobile-menu {
+  display: block;
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 1001;
+}
+@media (min-width: 768px) {
+  .article-mobile-menu {
+    display: none; /* Hide on desktop */
+  }
+}
+
+.mobile-menu-toggle {
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: none;
+  border-radius: 6px;
+  padding: 0.5rem 0.75rem;
+  font-size: 1rem;
+  color: var(--accent-purple);
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+.mobile-menu-toggle:hover {
+  color: var(--accent-blue);
+}
+.mobile-menu-toggle:focus {
+  outline: none;
+}
+
+.mobile-menu-dropdown {
+  position: absolute;
+  top: 50px;
+  right: 0;
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 6px;
+  padding: 0.5rem;
+  min-width: 150px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.mobile-menu-item {
+  padding: 0.5rem 0.75rem;
+  cursor: pointer;
+  font-size: 0.85rem;
+  color: var(--text-color);
+  transition: color 0.2s ease;
+}
+.mobile-menu-item:hover {
+  color: var(--accent-purple);
+}
+.mobile-menu-item a {
+  color: inherit;
+  text-decoration: none;
+  display: block;
+}
+.mobile-menu-item a:hover {
+  color: var(--accent-purple);
+}
+.mobile-menu-item i {
+  margin-right: 0.5rem;
+}
+
+/* Desktop-only badges */
+.desktop-only {
+  display: none;
+}
+@media (min-width: 768px) {
+  .desktop-only {
+    display: block; /* Show on desktop */
+  }
+}
+
+/* Dark mode for mobile menu */
+[data-theme=dark] .mobile-menu-toggle {
+  background: rgba(30, 33, 39, 0.8);
+}
+[data-theme=dark] .mobile-menu-dropdown {
+  background: rgba(30, 33, 39, 0.95);
+}
+
+/* Article page specific styles */
+body.article-page #content h1 {
+  margin-top: 4rem !important;
 }
 
 /*# sourceMappingURL=custom.css.map */

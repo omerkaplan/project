@@ -1,58 +1,23 @@
-{% extends "base.html" %}
+{% extends "base.html" %} {% block body_class %}homepage{% endblock %} {% block
+title %}Omer Kaplan{% endblock %} {% block content %}
 
-{% block title %}{{ SITENAME }} by {{ AUTHOR }}{% endblock %}
+<!-- Coffee badge in corner for homepage -->
+<div class="homepage-coffee-badge">
+    made with<i class="fas fa-mug-hot mx-2 accent-orange"></i>by
+    <a href="/">Omer Kaplan</a>
+</div>
 
-{% block content %}
-<div class="col-lg-12 col-md-12 pl-lg-5">
-  <div class="row">
-    <div class="col-md-7 mt-3">
-      <h2 class="mb-5 accent-green">~/<a class="accent-pruple" href="/">project</a>/<a class="accent-orange"
-          href="/">all</a> <span class="text-muted">({{articles|length}} items)</span></h2>
-
-      {% for article in articles_page.object_list %}
-
-      {% if article.category == 'blog '%}
-      <div id="article-summary" class="mb-5">
-        <h5><a class="post-type-blog" href="/posts/{{ article.date.strftime('%Y')}}/{{ article.slug }}">{{ article.title
-            }}</a></h5>
-        <small><span class="badge badge-blog mr-2">Blog post</span></small>
-        <label><small class="mr-2"><i class="far fa-calendar-alt mr-2"></i>{{ article.date|strftime('%d %B, %Y')
-            }}</small></label>
-        <small><i class="far fa-clock mr-2"></i>{{article.readtime.minutes}} minutes read</small>
-        <div>{% if article.summary %}
-          {{ article.summary }}
-          {% else %}
-          <p class="text-muted">No summary avilable. Surprise inside?</p>
-          {% endif %}
-        </div>
-      </div>
-
-      {% elif article.category == 'project' %}
-      <div id="article-summary" class="mb-5">
-        <h5><a href="/posts/{{ article.date.strftime('%Y')}}/{{ article.slug }}" class="post-type-project">{{
-            article.title
-            }}</a></h5>
-        <small><span class="badge badge-project mr-2">Project</span></small>
-        <label><small class="mr-2"><i class="far fa-calendar-alt mr-2"></i>{{ article.date|strftime('%d %B, %Y')
-            }}</small></label>
-        <label><small class="mr-2"><i class="fas fa-laptop-code mr-2"></i>{{ article.projecttype }}</small></label>
-        <div>{{ article.summary }}</div>
-      </div>
-      {% endif %}
-      {% endfor %}
-
-      {% if DEFAULT_PAGINATION %}
-      <p class="paginator">
-        {% if articles_page.has_previous() %}
-        <a href="{{ SITEURL }}/{{ articles_previous_page.url }}">&laquo;</a>
-        {% endif %}
-        Page {{ articles_page.number }} / {{ articles_paginator.num_pages }}
-        {% if articles_page.has_next() %}
-        <a href="{{ SITEURL }}/{{ articles_next_page.url }}">&raquo;</a>
-        {% endif %}
-      </p>
-      {% endif %}
-
+<div class="col-lg-8 col-md-10 mx-auto">
+    <div class="about-section mt-5 mb-5">
+        <!-- Homepage Content -->
+        <h1>hi, I'm Omer!</h1>
+        <p class="mt-4">
+            <a href="/about">about</a> &nbsp;·&nbsp;
+            <a href="/now">now</a> &nbsp;·&nbsp;
+            <a href="/ai">ai</a>
+        </p>
+        {% for page in pages %}{% if page.slug == 'home' %} {{ page.content }}
+        {% endif %}{% endfor %}
     </div>
-  </div>
-  {% endblock %}
+</div>
+{% endblock %}
