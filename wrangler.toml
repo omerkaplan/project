@@ -1,2 +1,5 @@
 name = "omerk-me"
-pages_build_output_dir = "output"
+compatibility_date = "2026-03-16"
+
+[assets]
+directory = "./output"
