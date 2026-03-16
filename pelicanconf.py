@@ -60,12 +60,14 @@ FORMATTED_FIELDS = ['']
 # This section copies these static assets into /output. Notice the static directory that's generated is in /content and not in /theme
 STATIC_PATHS = [
     'extra/CNAME',
+    'extra/robots.txt',
     'static',
     ]
 
 EXTRA_PATH_METADATA = {
     'static/favicon/favicon.ico': {'path': 'favicon.ico'},
     'extra/CNAME': {'path': 'CNAME'},
+    'extra/robots.txt': {'path': 'robots.txt'},
     }
 # related posts plugin
 

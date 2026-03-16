@@ -1,21 +1,44 @@
-## Useful commands
+# omerk.me
 
+Personal website built with [Pelican](https://getpelican.com/) and deployed to Cloudflare via GitHub.
 
-| Task                                             | Command                                                      |
-| ------------------------------------------------ | ------------------------------------------------------------ |
-| Preview the site locally + build if changes made | `pelican content --autoreload --listen -s pelicanconf.py`    |
-| Watch SCSS & auto-compile into theme css         | `sass --watch theme/minimalist/static/_scss/custom.scss:theme/minimalist/static/css/custom.css` |
-| Free up port 8000 in case I mess up processes    | `lsof -i :8000` → then `kill -9 <PID>`                       |
+## Setup
 
+```bash
+python3 -m venv venv
+source venv/bin/activate
+pip install -r requirements.txt
+```
 
-## Deploying things
+## Local development
 
-*** dont checkout to ph-pages or all bad things will happen ***
+Run both commands in separate terminal tabs:
 
-Update 4/2 2023: Since you didn't listen and committed things to the gh-pages branch, bad stuff did happen and we had to reset the entire branch. Do the steps below and no one will get hurt.
+**Auto-regenerate & serve the site**
+```bash
+pelican content --autoreload --listen -s pelicanconf.py
+```
+Site is available at `http://localhost:8000`
 
-Got new content? great!
+**Watch & compile SCSS**
+```bash
+sass --watch theme/minimalist/static/_scss/custom.scss:theme/minimalist/static/css/custom.css
+```
 
-1. pelican content -o output -s pelicanconf.py
-2. ghp-import output -b gh-pages
-3. git push origin gh-pages
+If port 8000 is stuck:
+```bash
+lsof -i :8000   # find the PID
+kill -9 <PID>
+```
+
+## Deploying
+
+The site deploys automatically — just push to `master`:
+
+```bash
+git add content/pages/your-file.md
+git commit -m "your message"
+git push
+```
+
+Cloudflare picks up the push, builds the site, and deploys to `omerk.me`. You can monitor build progress in the Cloudflare dashboard under **Workers & Pages → project → Deployments**.
