@@ -2,7 +2,7 @@ Title: about
 Date: 2026-03-14
 Slug: about
 
-<raw><img src="https://slashproject.s3.amazonaws.com/img/omer.jpg" class="profile-photo" alt="Omer Kaplan" /></raw>
+<raw><img src="https://slashproject.s3.us-east-1.amazonaws.com/img/omer.jpeg" class="profile-photo" alt="Omer Kaplan" /></raw>
 
 I'm Omer Kaplan and this is my /about page.
 
