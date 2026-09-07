@@ -12,9 +12,13 @@ I'm Omer Kaplan, Chief Product Officer at Sonara Health, product management advo
 
 Check out my [about page](/about). 
 
+<!-- Now section hidden while the now page is stale: uncomment to restore.
+
 ### what am I doing right now?
 
-Read all about it in my [Now page](/now). 
+Read all about it in my [Now page](/now).
+
+-->
 
 ### listen to me talk about product
 

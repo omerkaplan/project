@@ -13,7 +13,8 @@ title %}Omer Kaplan{% endblock %} {% block content %}
         <h1>hi, I'm Omer!</h1>
         <p class="mt-4">
             <a href="/about">about</a> &nbsp;·&nbsp;
-            <a href="/now">now</a> &nbsp;·&nbsp;
+            <!-- /now link hidden while the now page is stale: uncomment to restore. -->
+            <!-- <a href="/now">now</a> &nbsp;·&nbsp; -->
             <a href="/ai">ai</a>
         </p>
         {% for page in pages %}{% if page.slug == 'home' %} {{ page.content }}
